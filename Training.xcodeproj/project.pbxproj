@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3463797122587E5900D3A36E /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463797022587E5900D3A36E /* RegisterController.m */; };
 		34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F3F2255CBDA0078C67A /* AppDelegate.m */; };
 		34CA6F432255CBDA0078C67A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F422255CBDA0078C67A /* ViewController.m */; };
 		34CA6F462255CBDA0078C67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F442255CBDA0078C67A /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3463796F22587E5900D3A36E /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		3463797022587E5900D3A36E /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		34CA6F3B2255CBDA0078C67A /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CA6F3E2255CBDA0078C67A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34CA6F3F2255CBDA0078C67A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				34CA6F412255CBDA0078C67A /* ViewController.h */,
 				34CA6F422255CBDA0078C67A /* ViewController.m */,
 				34CA6F442255CBDA0078C67A /* Main.storyboard */,
+				3463796F22587E5900D3A36E /* RegisterController.h */,
+				3463797022587E5900D3A36E /* RegisterController.m */,
 				34CA6F472255CBDC0078C67A /* Assets.xcassets */,
 				34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */,
 				34CA6F4C2255CBDC0078C67A /* Info.plist */,
@@ -150,6 +155,7 @@
 				34CA6F432255CBDA0078C67A /* ViewController.m in Sources */,
 				34CA6F4E2255CBDC0078C67A /* main.m in Sources */,
 				34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */,
+				3463797122587E5900D3A36E /* RegisterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

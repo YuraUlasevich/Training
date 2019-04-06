@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BNF-b5-V3F" kind="presentation" id="KIw-as-0xz"/>
+                                    <segue destination="BNF-b5-V3F" kind="showDetail" id="sGI-8r-Bap"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-jV-uKT">
@@ -80,10 +80,12 @@
             </objects>
             <point key="canvasLocation" x="-1991" y="-305"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Controller-->
         <scene sceneID="6er-Ed-Rtf">
             <objects>
-                <viewController id="BNF-b5-V3F" sceneMemberID="viewController">
+                <exit id="al4-7C-PcP" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4e-bv-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="RegisterController" id="BNF-b5-V3F" customClass="RegisterController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3iZ-3R-4CX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +99,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="registerNameTextField:" destination="al4-7C-PcP" eventType="editingDidEnd" id="wvq-Iy-Nkx"/>
-                                    <outlet property="delegate" destination="BNF-b5-V3F" id="9E5-SM-Na8"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Фамилия" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-cc-y8v">
@@ -158,7 +159,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="4x2-o2-YuZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="TAx-LJ-TE3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-0j-vw2">
@@ -182,9 +183,16 @@
                         <color key="backgroundColor" red="0.50643324710000004" green="0.41741411969999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="DAP-jp-EU3"/>
                     </view>
+                    <connections>
+                        <outlet property="emailRegisterTextField" destination="HaS-CO-9bm" id="g2A-eT-s7I"/>
+                        <outlet property="firstNameRegisterTextField" destination="y3L-Kh-GXF" id="eGH-WP-haw"/>
+                        <outlet property="heightRegisterTextField" destination="tbG-6c-oN9" id="IzD-mK-OPz"/>
+                        <outlet property="loginRegisterTextField" destination="5du-7H-JrS" id="MLM-kV-Clx"/>
+                        <outlet property="passwordRegisterTextField" destination="VOa-MX-5W3" id="0vj-20-Ouz"/>
+                        <outlet property="secondNameRegisterTextField" destination="2wa-cc-y8v" id="Gch-cC-YSf"/>
+                        <outlet property="weightRegisterTextField" destination="0vc-d9-qDq" id="hhT-Pe-J32"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D4e-bv-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="al4-7C-PcP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1068.1159420289855" y="-305.35714285714283"/>
         </scene>

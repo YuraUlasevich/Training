@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegisterController.h"
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 - (IBAction)loginButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *loginTextField;
+- (IBAction)RegisterButtonPressed:(UIButton *)sender;
 
 
 @end
