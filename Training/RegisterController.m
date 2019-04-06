@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
+    UITapGestureRecognizer * handledTap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(handleEndEditing)];
+    [self.view addGestureRecognizer:handledTap];
+}
+
+- (void) handleEndEditing{
+    [self.view endEditing:YES];
 }
 
 /*
