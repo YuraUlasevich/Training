@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UITextField *emailRegisterTextField;
 @property (weak, nonatomic) IBOutlet UITextField *loginRegisterTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordRegisterTextField;
+- (IBAction)registerButtonPressed:(UIButton *)sender;
 
 
 @end
