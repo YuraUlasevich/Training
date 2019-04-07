@@ -44,14 +44,61 @@
     NSString* patterForPassword = @"[a-z0-9]{6,20}";
     NSRegularExpressionOptions regexOptions = NSRegularExpressionCaseInsensitive;
     NSError*  errorFirstName = NULL;
+    NSError*  errorSecondName = NULL;
+    NSError*  errorHeight = NULL;
+    NSError*  errorWeight = NULL;
+    NSError*  errorLogin = NULL;
+    NSError*  errorPassword = NULL;
     //    NSError*  errorPassword = NULL;
     NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:patterForFirstName options:regexOptions error:&errorFirstName];
     NSUInteger numberOfMatchesFirstName = [regex numberOfMatchesInString:_firstNameRegisterTextField.text
                                                         options:0
                                                           range:NSMakeRange(0, [_firstNameRegisterTextField.text length])];
+    regex = [NSRegularExpression regularExpressionWithPattern:patterForSecondName options:regexOptions error:&errorSecondName];
+    NSUInteger numberOfMatchesSecondName = [regex numberOfMatchesInString:_secondNameRegisterTextField.text
+                                                                 options:0
+                                                                   range:NSMakeRange(0, [_secondNameRegisterTextField.text length])];
+    regex = [NSRegularExpression regularExpressionWithPattern:patterForHeight options:regexOptions error:&errorHeight];
+    NSUInteger numberOfMatchesHeight = [regex numberOfMatchesInString:_heightRegisterTextField.text
+                                                                 options:0
+                                                                   range:NSMakeRange(0, [_heightRegisterTextField.text length])];
+    regex = [NSRegularExpression regularExpressionWithPattern:patterForWeight options:regexOptions error:&errorWeight];
+    NSUInteger numberOfMatchesWeight = [regex numberOfMatchesInString:_weightRegisterTextField.text
+                                                                 options:0
+                                                                   range:NSMakeRange(0, [_weightRegisterTextField.text length])];
+    regex = [NSRegularExpression regularExpressionWithPattern:patterForLogin options:regexOptions error:&errorLogin];
+    NSUInteger numberOfMatchesLogin = [regex numberOfMatchesInString:_loginRegisterTextField.text
+                                                                 options:0
+                                                                   range:NSMakeRange(0, [_loginRegisterTextField.text length])];
+    regex = [NSRegularExpression regularExpressionWithPattern:patterForPassword options:regexOptions error:&errorPassword];
+    NSUInteger numberOfMatchesPassword = [regex numberOfMatchesInString:_passwordRegisterTextField.text
+                                                                 options:0
+                                                                   range:NSMakeRange(0, [_passwordRegisterTextField.text length])];
+
     if(numberOfMatchesFirstName == 0){
         _firstNameRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
         _firstNameRegisterTextField.layer.borderWidth = 3.0f;
     }
+    if(numberOfMatchesSecondName == 0){
+        _secondNameRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+        _secondNameRegisterTextField.layer.borderWidth = 3.0f;
+    }
+    if(numberOfMatchesHeight == 0){
+        _heightRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+        _heightRegisterTextField.layer.borderWidth = 3.0f;
+    }
+    if(numberOfMatchesWeight == 0){
+        _weightRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+        _weightRegisterTextField.layer.borderWidth = 3.0f;
+    }
+    if(numberOfMatchesLogin == 0){
+        _loginRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+        _loginRegisterTextField.layer.borderWidth = 3.0f;
+    }
+    if(numberOfMatchesPassword == 0){
+        _passwordRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+        _passwordRegisterTextField.layer.borderWidth = 3.0f;
+    }
+    
 }
 @end
