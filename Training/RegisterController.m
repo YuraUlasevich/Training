@@ -38,9 +38,9 @@
 - (IBAction)registerButtonPressed:(UIButton *)sender {
     NSString* patterForFirstName = @"[a-zа-я]{2,20}";
     NSString* patterForSecondName = @"[a-z-]{2,20}";
-    NSString* patterForHeight = @"[0-9]{2,3}";
-    NSString* patterForWeight = @"[0-9]{3}";
-    NSString* patterForLogin = @"[a-zA-z0-9]{6-20}";
+    NSString* patterForHeight = @"[0-9]{3}";
+    NSString* patterForWeight = @"[0-9]{2,3}";
+    NSString* patterForLogin = @"[a-zA-z0-9]{6,20}";
     NSString* patterForPassword = @"[a-z0-9]{6,20}";
     NSRegularExpressionOptions regexOptions = NSRegularExpressionCaseInsensitive;
     NSError*  errorFirstName = NULL;
@@ -99,6 +99,12 @@
         _passwordRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
         _passwordRegisterTextField.layer.borderWidth = 3.0f;
     }
+    if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
+//
+//        [User addUser:_firstNameRegisterTextField.text andSecondName:_secondNameRegisterTextField.text andLogin:_loginRegisterTextField.text];
+        NSLog(@"All is good");
+    }
+        
     
 }
 @end

@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString * userFirstName;
 @property (nonatomic, strong) NSString * userSecondName;
 @property (nonatomic, strong) NSString * userLogin;
-@property (nonatomic, strong) NSString * userEmail;
-@property (nonatomic, strong) NSString * userPassword;
+@property (nonatomic, strong) NSNumber* userID;
 
++(void) addUser: (NSString*) withFirstName andSecondName: (NSString *) secondName andLogin: (NSString *) login;
 
 @end
 

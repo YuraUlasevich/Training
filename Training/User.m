@@ -10,4 +10,10 @@
 
 @implementation User
 
+@synthesize userLogin;
+
++(void) addUser:(NSString *)withFirstName andSecondName:(NSString *)secondName andLogin:(NSString *)login andIdUser:(NSNumber *)userID{
+    
+}
+
 @end
