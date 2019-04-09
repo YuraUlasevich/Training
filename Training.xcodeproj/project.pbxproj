@@ -17,6 +17,7 @@
 		34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */; };
 		34CA6F4E2255CBDC0078C67A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F4D2255CBDC0078C67A /* main.m */; };
 		34CA6F5622571A250078C67A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F5522571A250078C67A /* User.m */; };
+		34D9A41A225D13FB00D5F481 /* TrainingClientDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D9A419225D13FB00D5F481 /* TrainingClientDB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		34CA6F4D2255CBDC0078C67A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34CA6F5422571A250078C67A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		34CA6F5522571A250078C67A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		34D9A418225D13FB00D5F481 /* TrainingClientDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingClientDB.h; sourceTree = "<group>"; };
+		34D9A419225D13FB00D5F481 /* TrainingClientDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingClientDB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,
 				3463796F22587E5900D3A36E /* RegisterController.h */,
 				3463797022587E5900D3A36E /* RegisterController.m */,
+				34D9A418225D13FB00D5F481 /* TrainingClientDB.h */,
+				34D9A419225D13FB00D5F481 /* TrainingClientDB.m */,
 				343FC3CA225CA6D70007AE47 /* Second.storyboard */,
 				34CA6F472255CBDC0078C67A /* Assets.xcassets */,
 				34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */,
@@ -162,6 +167,7 @@
 			files = (
 				34CA6F5622571A250078C67A /* User.m in Sources */,
 				34CA6F432255CBDA0078C67A /* ViewController.m in Sources */,
+				34D9A41A225D13FB00D5F481 /* TrainingClientDB.m in Sources */,
 				34CA6F4E2255CBDC0078C67A /* main.m in Sources */,
 				343FC3C9225CA08B0007AE47 /* MainWindowViewController.m in Sources */,
 				34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */,
