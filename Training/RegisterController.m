@@ -103,8 +103,11 @@
 //
 //        [User addUser:_firstNameRegisterTextField.text andSecondName:_secondNameRegisterTextField.text andLogin:_loginRegisterTextField.text];
         NSLog(@"All is good");
+       
     }
-        
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
     
 }
 @end

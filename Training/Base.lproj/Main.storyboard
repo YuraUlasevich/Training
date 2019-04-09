@@ -83,8 +83,6 @@
         <!--Register Controller-->
         <scene sceneID="6er-Ed-Rtf">
             <objects>
-                <exit id="al4-7C-PcP" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D4e-bv-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RegisterController" id="BNF-b5-V3F" customClass="RegisterController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3iZ-3R-4CX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -196,6 +194,8 @@
                         <outlet property="weightRegisterTextField" destination="0vc-d9-qDq" id="hhT-Pe-J32"/>
                     </connections>
                 </viewController>
+                <exit id="al4-7C-PcP" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4e-bv-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1171" y="-324"/>
         </scene>
