@@ -100,8 +100,8 @@
         _passwordRegisterTextField.layer.borderWidth = 3.0f;
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
-//
-//        [User addUser:_firstNameRegisterTextField.text andSecondName:_secondNameRegisterTextField.text andLogin:_loginRegisterTextField.text];
+
+        [User addUser:_firstNameRegisterTextField.text andSecondName:_secondNameRegisterTextField.text andLogin:_loginRegisterTextField.text];
         NSLog(@"All is good");
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
         MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
