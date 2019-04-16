@@ -36,12 +36,12 @@
 */
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {
-    NSString* patterForFirstName = @"[a-zа-я]{2,20}";
-    NSString* patterForSecondName = @"[a-z-]{2,20}";
-    NSString* patterForHeight = @"[0-9]{3}";
-    NSString* patterForWeight = @"[0-9]{2,3}";
-    NSString* patterForLogin = @"[a-zA-z0-9]{6,20}";
-    NSString* patterForPassword = @"[a-z0-9]{6,20}";
+    NSString* patternForFirstName = @"[a-zа-я]{2,20}";
+    NSString* patternForSecondName = @"[a-z-]{2,20}";
+    NSString* patternForHeight = @"[0-9]{3}";
+    NSString* patternForWeight = @"[0-9]{2,3}";
+    NSString* patternForLogin = @"[a-zA-z0-9]{6,20}";
+    NSString* patternForPassword = @"[a-z0-9]{6,20}";
     NSRegularExpressionOptions regexOptions = NSRegularExpressionCaseInsensitive;
     NSError*  errorFirstName = NULL;
     NSError*  errorSecondName = NULL;
@@ -50,27 +50,27 @@
     NSError*  errorLogin = NULL;
     NSError*  errorPassword = NULL;
     //    NSError*  errorPassword = NULL;
-    NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:patterForFirstName options:regexOptions error:&errorFirstName];
+    NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:patternForFirstName options:regexOptions error:&errorFirstName];
     NSUInteger numberOfMatchesFirstName = [regex numberOfMatchesInString:_firstNameRegisterTextField.text
                                                         options:0
                                                           range:NSMakeRange(0, [_firstNameRegisterTextField.text length])];
-    regex = [NSRegularExpression regularExpressionWithPattern:patterForSecondName options:regexOptions error:&errorSecondName];
+    regex = [NSRegularExpression regularExpressionWithPattern:patternForSecondName options:regexOptions error:&errorSecondName];
     NSUInteger numberOfMatchesSecondName = [regex numberOfMatchesInString:_secondNameRegisterTextField.text
                                                                  options:0
                                                                    range:NSMakeRange(0, [_secondNameRegisterTextField.text length])];
-    regex = [NSRegularExpression regularExpressionWithPattern:patterForHeight options:regexOptions error:&errorHeight];
+    regex = [NSRegularExpression regularExpressionWithPattern:patternForHeight options:regexOptions error:&errorHeight];
     NSUInteger numberOfMatchesHeight = [regex numberOfMatchesInString:_heightRegisterTextField.text
                                                                  options:0
                                                                    range:NSMakeRange(0, [_heightRegisterTextField.text length])];
-    regex = [NSRegularExpression regularExpressionWithPattern:patterForWeight options:regexOptions error:&errorWeight];
+    regex = [NSRegularExpression regularExpressionWithPattern:patternForWeight options:regexOptions error:&errorWeight];
     NSUInteger numberOfMatchesWeight = [regex numberOfMatchesInString:_weightRegisterTextField.text
                                                                  options:0
                                                                    range:NSMakeRange(0, [_weightRegisterTextField.text length])];
-    regex = [NSRegularExpression regularExpressionWithPattern:patterForLogin options:regexOptions error:&errorLogin];
+    regex = [NSRegularExpression regularExpressionWithPattern:patternForLogin options:regexOptions error:&errorLogin];
     NSUInteger numberOfMatchesLogin = [regex numberOfMatchesInString:_loginRegisterTextField.text
                                                                  options:0
                                                                    range:NSMakeRange(0, [_loginRegisterTextField.text length])];
-    regex = [NSRegularExpression regularExpressionWithPattern:patterForPassword options:regexOptions error:&errorPassword];
+    regex = [NSRegularExpression regularExpressionWithPattern:patternForPassword options:regexOptions error:&errorPassword];
     NSUInteger numberOfMatchesPassword = [regex numberOfMatchesInString:_passwordRegisterTextField.text
                                                                  options:0
                                                                    range:NSMakeRange(0, [_passwordRegisterTextField.text length])];
@@ -100,9 +100,6 @@
         _passwordRegisterTextField.layer.borderWidth = 3.0f;
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
-
-        [User addUser:_firstNameRegisterTextField.text andSecondName:_secondNameRegisterTextField.text andLogin:_loginRegisterTextField.text];
-        NSLog(@"All is good");
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
         MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
         [self presentViewController:myVC animated:YES completion:nil];

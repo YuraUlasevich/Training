@@ -8,17 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface User : NSObject
-
-@property (nonatomic, strong) NSString * userFirstName;
-@property (nonatomic, strong) NSString * userSecondName;
-@property (nonatomic, strong) NSString * userLogin;
-@property (nonatomic, strong) NSNumber* userID;
-
-+(void) addUser: (NSString*) withFirstName andSecondName: (NSString *) secondName andLogin: (NSString *) login;
+@interface User : NSObject{
+    NSString *_userFirstName;
+    NSString *_userSecondName;
+    NSString *_userLogin;
+    NSNumber *_userID;
+}
 
 @end
 
-NS_ASSUME_NONNULL_END
+

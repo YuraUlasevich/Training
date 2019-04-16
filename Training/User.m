@@ -10,16 +10,4 @@
 
 @implementation User
 
-@synthesize userLogin;
-
-+(void) addUser:(NSString *)withFirstName andSecondName:(NSString *)secondName andLogin:(NSString *)login{
-    
-    User *user = [[User alloc] init];
-    user.userFirstName = withFirstName;
-    user.userSecondName = secondName;
-    user.userLogin = login;
-    //user.userID = userID;
-    
-}
-
 @end
