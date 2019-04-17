@@ -117,7 +117,9 @@
         if (![database executeUpdate:testStr]) {
             NSLog(@"db insert err");
         }
+        [database close];
         
+        [database open];
         _results = [database executeQuery:@"select * from client"];
         while([_results next]) {
             NSString *login = [_results stringForColumn:@"login"];
@@ -126,7 +128,6 @@
             [_loginItems insertObject:login atIndex:[_loginItems count]];
             [_emailItems insertObject:email atIndex:[_emailItems count]];
             NSLog(@"%@", login);
-            NSLog(@"%@", email);
         }
         
         //удаляем подключение к базе
