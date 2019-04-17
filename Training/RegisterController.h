@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "User.h"
 #import "MainWindowViewController.h"
+#import <FMDB.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface RegisterController : UIViewController
+@interface RegisterController : UIViewController{
+    NSMutableArray *_loginItems;
+    NSMutableArray *_emailItems;
+    FMResultSet *_results;
+}
+
 @property (weak, nonatomic) IBOutlet UITextField *firstNameRegisterTextField;
 @property (weak, nonatomic) IBOutlet UITextField *secondNameRegisterTextField;
 @property (weak, nonatomic) IBOutlet UITextField *heightRegisterTextField;
@@ -24,5 +29,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
-
-NS_ASSUME_NONNULL_END

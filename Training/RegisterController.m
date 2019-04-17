@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     UITapGestureRecognizer * handledTap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(handleEndEditing)];
     [self.view addGestureRecognizer:handledTap];
+    //[self loadItems];
 }
 
 - (void) handleEndEditing{
@@ -100,11 +101,99 @@
         _passwordRegisterTextField.layer.borderWidth = 3.0f;
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
+        
+        //определяем путь к файлу с базой
+        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"my.db"];
+        //создаем подключение к базе
+        FMDatabase *database;
+        database = [FMDatabase databaseWithPath:path];
+        database.traceExecution = false; //выводит подробный лог запросов в консоль
+        [database open];
+        
+        //выполняем выборку из таблицы client
+        
+        NSString* testStr=[NSString stringWithFormat:@"INSERT INTO client (id_client, firstname, second_name, email, login, password, height, weight) VALUES (%i, '%@', '%@', '%@', '%@', '%@', %li,%li)", 5, _firstNameRegisterTextField.text, _secondNameRegisterTextField.text, _emailRegisterTextField.text, _loginRegisterTextField.text, _passwordRegisterTextField.text, [_heightRegisterTextField.text integerValue], [_weightRegisterTextField.text integerValue]];
+        
+        if (![database executeUpdate:testStr]) {
+            NSLog(@"db insert err");
+        }
+        
+        _results = [database executeQuery:@"select * from client"];
+        while([_results next]) {
+            NSString *login = [_results stringForColumn:@"login"];
+            NSString *email = [_results stringForColumn:@"email"];
+            //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
+            [_loginItems insertObject:login atIndex:[_loginItems count]];
+            [_emailItems insertObject:email atIndex:[_emailItems count]];
+            NSLog(@"%@", login);
+            NSLog(@"%@", email);
+        }
+        
+        //удаляем подключение к базе
+        [database close];
+        
+        
+        
+        
+        
+        
+        
+        
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
         MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
         [self presentViewController:myVC animated:YES completion:nil];
+//        BOOL flagForLogin = NO;
+//        BOOL flagForEmail = NO;
+//        for (int i=0; i<_loginItems.count-1; i++) {
+//            if([_loginItems[i] isEqualToString:_loginRegisterTextField.text]){
+//                flagForLogin = YES;
+//                break;
+//            }
+//            if([_emailItems[i] isEqualToString:_emailRegisterTextField.text]){
+//                flagForEmail = YES;
+//                break;
+//            }
+//        }
+//        if (!flagForLogin && !flagForEmail) {
+//            UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+//            MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+//            [self presentViewController:myVC animated:YES completion:nil];
+//        }
+//        else if(flagForLogin){
+//            _loginRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+//            _loginRegisterTextField.layer.borderWidth = 3.0f;
+//        }
+//        else if (flagForEmail){
+//            _emailRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
+//            _emailRegisterTextField.layer.borderWidth = 3.0f;
+//        }
     }
     
     
 }
+
+- (void)loadItems
+{
+    //определяем путь к файлу с базой
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"my.db"];
+    //создаем подключение к базе
+    FMDatabase *database;
+    database = [FMDatabase databaseWithPath:path];
+    database.traceExecution = false; //выводит подробный лог запросов в консоль
+    [database open];
+    
+    //выполняем выборку из таблицы client
+    _results = [database executeQuery:@"select * from client"];
+    while([_results next]) {
+        NSString *login = [_results stringForColumn:@"login"];
+        NSString *email = [_results stringForColumn:@"email"];
+        //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
+        [_loginItems insertObject:login atIndex:[_loginItems count]];
+        [_emailItems insertObject:email atIndex:[_emailItems count]];
+    }
+    
+    //удаляем подключение к базе
+    [database close];
+}
+
 @end

@@ -31,7 +31,7 @@
     //создаем подключение к базе
     FMDatabase *database;
     database = [FMDatabase databaseWithPath:path];
-    database.traceExecution = true; //выводит подробный лог запросов в консоль
+    database.traceExecution = false; //выводит подробный лог запросов в консоль
     [database open];
     
     //выполняем выборку из таблицы client
@@ -56,7 +56,7 @@
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     BOOL flag = NO;
-    for(int i=0; i<_loginItems.count-1; i++){
+    for(int i=0; i<_loginItems.count; i++){
         if([_loginItems[i] isEqualToString:_loginTextField.text] && [_passwordItems[i] isEqualToString:_passwordTextField.text]){
             flag = YES;
             break;
