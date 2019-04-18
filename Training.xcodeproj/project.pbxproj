@@ -30,6 +30,7 @@
 		34593D3622664D2600CC2A43 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3463796F22587E5900D3A36E /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		3463797022587E5900D3A36E /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		34923427226857BB00D20897 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		34963291226774790055C2B8 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		34CA6F3B2255CBDA0078C67A /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +99,7 @@
 				34CA6F3F2255CBDA0078C67A /* AppDelegate.m */,
 				34CA6F412255CBDA0078C67A /* ViewController.h */,
 				34CA6F422255CBDA0078C67A /* ViewController.m */,
+				34923427226857BB00D20897 /* my.db */,
 				34CA6F442255CBDA0078C67A /* Main.storyboard */,
 				343FC3C7225CA08B0007AE47 /* MainWindowViewController.h */,
 				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,

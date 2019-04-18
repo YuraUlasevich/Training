@@ -27,10 +27,10 @@
 - (void)loadItems
 {
     //определяем путь к файлу с базой
-    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"my.db"];
+    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
     //создаем подключение к базе
     FMDatabase *database;
-    database = [FMDatabase databaseWithPath:path];
+    database = [FMDatabase databaseWithPath:databasePath];
     database.traceExecution = false; //выводит подробный лог запросов в консоль
     [database open];
     
