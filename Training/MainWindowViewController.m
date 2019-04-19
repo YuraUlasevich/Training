@@ -29,9 +29,4 @@
 }
 */
 
-- (IBAction)button:(id)sender {
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"ViewController"];
-    [self presentViewController:myVC animated:YES completion:nil];
-}
 @end

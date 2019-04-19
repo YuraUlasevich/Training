@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01082296B2FFCAAA6544232E9CE924EE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3216A9EA48F02E1770F54565966D3186 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */; };
-		35382B71707324690D200C461EA3F0C3 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4A61831FE9CD3D2D38CF2B2364A3E45E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		562D990DD2B3B57373DA57A4D6049583 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6E7896F73871D7BAF437FCA4CC91517E /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		88F04630237660399A8402C7B0EB11BA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9B60A3F7EA094633D8AE153C611FAB6F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A2D93DC9BD23738FF01DC59200280372 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A793ECA977668D073CABEDC2BEDF75A5 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AA3E567B61D587198A974178EBC18C69 /* Pods-Training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */; };
-		CF3C42C8DDF68A1C107238AEBE01A6A2 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E413014A305FADEBA8EEE75EF409112E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01082296B2FFCAAA6544232E9CE924EE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BCEE15ABD7820C0272E65F96AC526 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11232B54ECFBF240E02F218F3DDAE610 /* PKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B39DD50872E7192FAC4AD5DE21D33F55 /* PKLog.m */; };
+		1C55711A4EDA31814C16529C59646D90 /* CALayer+PKConvenienceAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB03EDBFCF60B19381C0FC453FB78F2 /* CALayer+PKConvenienceAnimations.m */; };
+		3216A9EA48F02E1770F54565966D3186 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0E63985A806A91FC80CFC3C796AEF /* FMDB-dummy.m */; };
+		35382B71707324690D200C461EA3F0C3 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E525F958A1063F7D6BE160CCE01D07D /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3727659AECD24C1DDE92DEBC7C2E9C03 /* PKRevealControllerView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF788757750C5AAB197160E636C241DE /* PKRevealControllerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37A89ACF80736BEFCAF0B031212C48FA /* CAAnimation+PKIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F27A38F8F7C2587422F78E062D249F /* CAAnimation+PKIdentifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3816CFD02791D36BAD3406C5B401C2BB /* PKRevealController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B82D654BE0A854F742108F08238C1 /* PKRevealController-dummy.m */; };
+		3983D6462B7D225E6D3ED6368CECAD72 /* PKAnimating.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D1CA351B85D86DAD4F7A9EA70B769D8 /* PKAnimating.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B15D22395C4AFF17B9D12A93B017113 /* CALayer+PKConvenienceAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C545CC1A101C90275C01976FAF27D8 /* CALayer+PKConvenienceAnimations.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		411DAC5F6B2EE9038B4209E15640D7D7 /* NSObject+PKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1609FCA0FE0015A6E68B337B8F466C44 /* NSObject+PKBlocks.m */; };
+		4A61831FE9CD3D2D38CF2B2364A3E45E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC06B6B696819B4CC1C00D3D0A7F251 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E33CE2C58563A877CB6DD2E999FA131 /* Pods-Training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */; };
+		562D990DD2B3B57373DA57A4D6049583 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3FA026298E4E3BAC303472D56D5D31 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57E5AB92B0DFEC8447D7F68182F70640 /* PKSequentialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB0C52EF45151BE58031348084C1945 /* PKSequentialAnimation.m */; };
+		6E7896F73871D7BAF437FCA4CC91517E /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F300B700612F1A4EF18E8DB279C114 /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77290A669405B0BF8F054A507C75DE7C /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF985172A02369731007ACF3C40EDD0 /* PKRevealController.m */; };
+		88D146B005703143C1822DBC8721442B /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D02721B3180D383AFF3823FAEB25F /* UIViewController+PKRevealController.m */; };
+		88F04630237660399A8402C7B0EB11BA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7B8FBC06F6076824D8DFE7B6CF9B1 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9689DE18DF7EDD5FA6E6427DA6F9921A /* PKRevealController.h in Headers */ = {isa = PBXBuildFile; fileRef = F68DA5888BA2CBFAB699840693DD78FD /* PKRevealController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B35E26079C543F011E46174E1F73DBF /* PKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CEC11143A6D05F2E365886FECCED7C /* PKAnimation.m */; };
+		9B60A3F7EA094633D8AE153C611FAB6F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 300FD52A9A7E0D98E831D066E5D9D8E8 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CE1D0581A7A391762F5791BE72D5B9C /* PKRevealControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE508B6222F55EEC7CD238763B6C422 /* PKRevealControllerView.m */; };
+		A16EC4C76C9EB56083C94E8BEA704D0A /* PKLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 534492036B25D12B8B9612BE176960CB /* PKLog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2D93DC9BD23738FF01DC59200280372 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD48755A957EF0402441F1D259A291 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4945C7D1CEA63B111CFFB1820F14562 /* PKSequentialAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 026C9B93DEFCFFEB843409252B45DB4F /* PKSequentialAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A793ECA977668D073CABEDC2BEDF75A5 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCC668E23CDD44CD1A9EFA00387C8CA /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B937783F029383011F7D5C9E1565843C /* PKLayerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6369E5E7E07F53A330704F2BC20930D3 /* PKLayerAnimator.m */; };
+		CCC7734CB1CBE86D1186B50252CB6F55 /* PKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 029AA953AB2256B53713CF9481ADE1EF /* PKAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF3C42C8DDF68A1C107238AEBE01A6A2 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B15A9ABF7430C48F963F43F83BEF005 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D18F7583A41830D657D9178F9821CA47 /* NSObject+PKBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = E792B203D190D6CD6EA80B3947C42CF0 /* NSObject+PKBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E413014A305FADEBA8EEE75EF409112E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B11D6E7BC4A4907035258F2866747D93 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9F6AC51BFC9D08E61AF109286712668 /* UIViewController+PKRevealController.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BE87226F9FF48C43435129B53ECCFB /* UIViewController+PKRevealController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED37F644E24C18B175C3DEDCA19E2E59 /* CAAnimation+PKIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD845F24F0007088EC2B7AE95F9C210 /* CAAnimation+PKIdentifier.m */; };
+		FE6E75BA806791A977FFFCDFBAEAF3B0 /* PKLayerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 738BA7F1377AB2D28D0EFD958DBFB6F5 /* PKLayerAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9321E050CA1206DC58ABA427D307D9B8 /* PBXContainerItemProxy */ = {
+		09B70A2EFB3C4CDDD80E9120CB823AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 692CAA19FBF36AD1938F9650B7C17709;
+			remoteInfo = PKRevealController;
+		};
+		13F4E6C50D356CD37B6F317BA2675754 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -33,32 +62,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		026C9B93DEFCFFEB843409252B45DB4F /* PKSequentialAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKSequentialAnimation.h; path = Source/PKRevealController/Modules/PKLayerAnimator/PKSequentialAnimation.h; sourceTree = "<group>"; };
+		029AA953AB2256B53713CF9481ADE1EF /* PKAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKAnimation.h; path = Source/PKRevealController/Modules/PKLayerAnimator/PKAnimation.h; sourceTree = "<group>"; };
+		0DE508B6222F55EEC7CD238763B6C422 /* PKRevealControllerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKRevealControllerView.m; path = Source/PKRevealController/Classes/PKRevealControllerView.m; sourceTree = "<group>"; };
+		1609FCA0FE0015A6E68B337B8F466C44 /* NSObject+PKBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PKBlocks.m"; path = "Source/PKRevealController/Categories/NSObject+PKBlocks.m"; sourceTree = "<group>"; };
 		16CC71B85A8382CF9B1A30006BD39494 /* Pods-Training-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Training-acknowledgements.markdown"; sourceTree = "<group>"; };
-		16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Training.a"; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1CA351B85D86DAD4F7A9EA70B769D8 /* PKAnimating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKAnimating.h; path = Source/PKRevealController/Modules/PKLayerAnimator/PKAnimating.h; sourceTree = "<group>"; };
+		2BD845F24F0007088EC2B7AE95F9C210 /* CAAnimation+PKIdentifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimation+PKIdentifier.m"; path = "Source/PKRevealController/Categories/CAAnimation+PKIdentifier.m"; sourceTree = "<group>"; };
+		300FD52A9A7E0D98E831D066E5D9D8E8 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		3084DA4878F57778CA51E7F8287989D6 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		378D02721B3180D383AFF3823FAEB25F /* UIViewController+PKRevealController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+PKRevealController.m"; path = "Source/PKRevealController/Categories/UIViewController+PKRevealController.m"; sourceTree = "<group>"; };
+		3B15A9ABF7430C48F963F43F83BEF005 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		3C0BCEE15ABD7820C0272E65F96AC526 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		3CC8AED9972EFA2A70ADD82AE77E7285 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Training.a"; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EFB1E0D4575396EC582CD7794AFE61 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		48CEC11143A6D05F2E365886FECCED7C /* PKAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKAnimation.m; path = Source/PKRevealController/Modules/PKLayerAnimator/PKAnimation.m; sourceTree = "<group>"; };
+		4C9B82D654BE0A854F742108F08238C1 /* PKRevealController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKRevealController-dummy.m"; sourceTree = "<group>"; };
+		534492036B25D12B8B9612BE176960CB /* PKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKLog.h; path = Source/PKRevealController/Modules/PKLog/PKLog.h; sourceTree = "<group>"; };
+		54A0E63985A806A91FC80CFC3C796AEF /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		5D3FA026298E4E3BAC303472D56D5D31 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Training-dummy.m"; sourceTree = "<group>"; };
-		6F49E256F4DABA22A6C3B6A4473E8A11 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		6369E5E7E07F53A330704F2BC20930D3 /* PKLayerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKLayerAnimator.m; path = Source/PKRevealController/Modules/PKLayerAnimator/PKLayerAnimator.m; sourceTree = "<group>"; };
+		71AD48755A957EF0402441F1D259A291 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		738BA7F1377AB2D28D0EFD958DBFB6F5 /* PKLayerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKLayerAnimator.h; path = Source/PKRevealController/Modules/PKLayerAnimator/PKLayerAnimator.h; sourceTree = "<group>"; };
+		76C7B8FBC06F6076824D8DFE7B6CF9B1 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		78C545CC1A101C90275C01976FAF27D8 /* CALayer+PKConvenienceAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PKConvenienceAnimations.h"; path = "Source/PKRevealController/Categories/CALayer+PKConvenienceAnimations.h"; sourceTree = "<group>"; };
+		7E525F958A1063F7D6BE160CCE01D07D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8CB0C52EF45151BE58031348084C1945 /* PKSequentialAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKSequentialAnimation.m; path = Source/PKRevealController/Modules/PKLayerAnimator/PKSequentialAnimation.m; sourceTree = "<group>"; };
+		8CCC668E23CDD44CD1A9EFA00387C8CA /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		91A367D12C2AABBDBAC0A611EFFD7A49 /* PKRevealController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKRevealController.xcconfig; sourceTree = "<group>"; };
 		91B4DA3E65AE688745AE30B378608660 /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
-		92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A02D380BCA0E990600CF86963615FD71 /* Pods-Training-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Training-acknowledgements.plist"; sourceTree = "<group>"; };
-		B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		B11D6E7BC4A4907035258F2866747D93 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		B39DD50872E7192FAC4AD5DE21D33F55 /* PKLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKLog.m; path = Source/PKRevealController/Modules/PKLog/PKLog.m; sourceTree = "<group>"; };
+		C26F7BB97AD91BE76391FAF244644875 /* PKRevealController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKRevealController-prefix.pch"; sourceTree = "<group>"; };
 		C38AD4B2699C22041A086DE5A3D8015F /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
-		C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		C468C2A7B6E785793ACFD04845C07E68 /* libPKRevealController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPKRevealController.a; path = libPKRevealController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C704B44B1725A5A675AF893F9D1BFCA6 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F27A38F8F7C2587422F78E062D249F /* CAAnimation+PKIdentifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+PKIdentifier.h"; path = "Source/PKRevealController/Categories/CAAnimation+PKIdentifier.h"; sourceTree = "<group>"; };
+		D0F300B700612F1A4EF18E8DB279C114 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		D9BE87226F9FF48C43435129B53ECCFB /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PKRevealController.h"; path = "Source/PKRevealController/Categories/UIViewController+PKRevealController.h"; sourceTree = "<group>"; };
+		DBF985172A02369731007ACF3C40EDD0 /* PKRevealController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKRevealController.m; path = Source/PKRevealController/PKRevealController.m; sourceTree = "<group>"; };
+		DEC06B6B696819B4CC1C00D3D0A7F251 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		DFB03EDBFCF60B19381C0FC453FB78F2 /* CALayer+PKConvenienceAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PKConvenienceAnimations.m"; path = "Source/PKRevealController/Categories/CALayer+PKConvenienceAnimations.m"; sourceTree = "<group>"; };
+		E792B203D190D6CD6EA80B3947C42CF0 /* NSObject+PKBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+PKBlocks.h"; path = "Source/PKRevealController/Categories/NSObject+PKBlocks.h"; sourceTree = "<group>"; };
+		F68DA5888BA2CBFAB699840693DD78FD /* PKRevealController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKRevealController.h; path = Source/PKRevealController/PKRevealController.h; sourceTree = "<group>"; };
+		FF788757750C5AAB197160E636C241DE /* PKRevealControllerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKRevealControllerView.h; path = Source/PKRevealController/Classes/PKRevealControllerView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72396340F3857EBE1799AEEE3BF33011 /* Frameworks */ = {
+		948040AA113F498F030CF606EFE23944 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,43 +126,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFED1059784A8FD6AA9B5DB2F298B5B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BA92083315427C27695A1E305525A18 /* FMDB */ = {
+		55AF254079C179C3BC6AF4DB472294E6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BD47F4415FE534B8495A748025B75DD /* standard */,
-				96FEF588B4F1FEA01C79674A6A69455F /* Support Files */,
+				91A367D12C2AABBDBAC0A611EFFD7A49 /* PKRevealController.xcconfig */,
+				4C9B82D654BE0A854F742108F08238C1 /* PKRevealController-dummy.m */,
+				C26F7BB97AD91BE76391FAF244644875 /* PKRevealController-prefix.pch */,
 			);
-			name = FMDB;
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		5BD47F4415FE534B8495A748025B75DD /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */,
-				11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */,
-				99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */,
-				706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */,
-				92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */,
-				BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */,
-				55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */,
-				B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */,
-				CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */,
-				04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */,
-				C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */,
-			);
-			name = standard;
-			sourceTree = "<group>";
-		};
-		68DB21AE5492FC581291330CF6E902BA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BA92083315427C27695A1E305525A18 /* FMDB */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/PKRevealController";
 			sourceTree = "<group>";
 		};
 		78A0A6C8010F837E1F44722A95A1854A /* Pods-Training */ = {
@@ -124,12 +160,12 @@
 			path = "Target Support Files/Pods-Training";
 			sourceTree = "<group>";
 		};
-		96FEF588B4F1FEA01C79674A6A69455F /* Support Files */ = {
+		78C128007BF37B8E107488546F0D46AF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */,
-				16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */,
-				6F49E256F4DABA22A6C3B6A4473E8A11 /* FMDB-prefix.pch */,
+				3084DA4878F57778CA51E7F8287989D6 /* FMDB.xcconfig */,
+				54A0E63985A806A91FC80CFC3C796AEF /* FMDB-dummy.m */,
+				47EFB1E0D4575396EC582CD7794AFE61 /* FMDB-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FMDB";
@@ -140,10 +176,38 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				68DB21AE5492FC581291330CF6E902BA /* Pods */,
-				F572EF8FB1B4E537031CA84643FB2164 /* Products */,
+				EC9FFA2889B7F41FE92A95D8F4375554 /* Pods */,
+				D4724DA7D3A34BADB6F39E80E7E1E006 /* Products */,
 				E087CEE0BB2358DB65233D2969CE9065 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D4724DA7D3A34BADB6F39E80E7E1E006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C704B44B1725A5A675AF893F9D1BFCA6 /* libFMDB.a */,
+				C468C2A7B6E785793ACFD04845C07E68 /* libPKRevealController.a */,
+				3CC8AED9972EFA2A70ADD82AE77E7285 /* libPods-Training.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6FD898176E4ECCB5E6C560744B72707 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				DEC06B6B696819B4CC1C00D3D0A7F251 /* FMDatabase.h */,
+				76C7B8FBC06F6076824D8DFE7B6CF9B1 /* FMDatabase.m */,
+				3B15A9ABF7430C48F963F43F83BEF005 /* FMDatabaseAdditions.h */,
+				3C0BCEE15ABD7820C0272E65F96AC526 /* FMDatabaseAdditions.m */,
+				8CCC668E23CDD44CD1A9EFA00387C8CA /* FMDatabasePool.h */,
+				300FD52A9A7E0D98E831D066E5D9D8E8 /* FMDatabasePool.m */,
+				7E525F958A1063F7D6BE160CCE01D07D /* FMDatabaseQueue.h */,
+				B11D6E7BC4A4907035258F2866747D93 /* FMDatabaseQueue.m */,
+				D0F300B700612F1A4EF18E8DB279C114 /* FMDB.h */,
+				71AD48755A957EF0402441F1D259A291 /* FMResultSet.h */,
+				5D3FA026298E4E3BAC303472D56D5D31 /* FMResultSet.m */,
+			);
+			name = standard;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -151,6 +215,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF72CA1D3B08CE1845338BEF18D8F9E0 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D6FD898176E4ECCB5E6C560744B72707 /* standard */,
+				78C128007BF37B8E107488546F0D46AF /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		E087CEE0BB2358DB65233D2969CE9065 /* Targets Support Files */ = {
@@ -161,13 +235,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F572EF8FB1B4E537031CA84643FB2164 /* Products */ = {
+		E2E9902553F8CB9A5172121D19D73308 /* PKRevealController */ = {
 			isa = PBXGroup;
 			children = (
-				9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */,
-				5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */,
+				D0F27A38F8F7C2587422F78E062D249F /* CAAnimation+PKIdentifier.h */,
+				2BD845F24F0007088EC2B7AE95F9C210 /* CAAnimation+PKIdentifier.m */,
+				78C545CC1A101C90275C01976FAF27D8 /* CALayer+PKConvenienceAnimations.h */,
+				DFB03EDBFCF60B19381C0FC453FB78F2 /* CALayer+PKConvenienceAnimations.m */,
+				E792B203D190D6CD6EA80B3947C42CF0 /* NSObject+PKBlocks.h */,
+				1609FCA0FE0015A6E68B337B8F466C44 /* NSObject+PKBlocks.m */,
+				1D1CA351B85D86DAD4F7A9EA70B769D8 /* PKAnimating.h */,
+				029AA953AB2256B53713CF9481ADE1EF /* PKAnimation.h */,
+				48CEC11143A6D05F2E365886FECCED7C /* PKAnimation.m */,
+				738BA7F1377AB2D28D0EFD958DBFB6F5 /* PKLayerAnimator.h */,
+				6369E5E7E07F53A330704F2BC20930D3 /* PKLayerAnimator.m */,
+				534492036B25D12B8B9612BE176960CB /* PKLog.h */,
+				B39DD50872E7192FAC4AD5DE21D33F55 /* PKLog.m */,
+				F68DA5888BA2CBFAB699840693DD78FD /* PKRevealController.h */,
+				DBF985172A02369731007ACF3C40EDD0 /* PKRevealController.m */,
+				FF788757750C5AAB197160E636C241DE /* PKRevealControllerView.h */,
+				0DE508B6222F55EEC7CD238763B6C422 /* PKRevealControllerView.m */,
+				026C9B93DEFCFFEB843409252B45DB4F /* PKSequentialAnimation.h */,
+				8CB0C52EF45151BE58031348084C1945 /* PKSequentialAnimation.m */,
+				D9BE87226F9FF48C43435129B53ECCFB /* UIViewController+PKRevealController.h */,
+				378D02721B3180D383AFF3823FAEB25F /* UIViewController+PKRevealController.m */,
+				55AF254079C179C3BC6AF4DB472294E6 /* Support Files */,
 			);
-			name = Products;
+			name = PKRevealController;
+			path = PKRevealController;
+			sourceTree = "<group>";
+		};
+		EC9FFA2889B7F41FE92A95D8F4375554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF72CA1D3B08CE1845338BEF18D8F9E0 /* FMDB */,
+				E2E9902553F8CB9A5172121D19D73308 /* PKRevealController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +290,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		634E064ECEF7A0D80EA3B4F793929157 /* Headers */ = {
+		2EB01B33B2B48606A400594E25BA04BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A89ACF80736BEFCAF0B031212C48FA /* CAAnimation+PKIdentifier.h in Headers */,
+				3B15D22395C4AFF17B9D12A93B017113 /* CALayer+PKConvenienceAnimations.h in Headers */,
+				D18F7583A41830D657D9178F9821CA47 /* NSObject+PKBlocks.h in Headers */,
+				3983D6462B7D225E6D3ED6368CECAD72 /* PKAnimating.h in Headers */,
+				CCC7734CB1CBE86D1186B50252CB6F55 /* PKAnimation.h in Headers */,
+				FE6E75BA806791A977FFFCDFBAEAF3B0 /* PKLayerAnimator.h in Headers */,
+				A16EC4C76C9EB56083C94E8BEA704D0A /* PKLog.h in Headers */,
+				9689DE18DF7EDD5FA6E6427DA6F9921A /* PKRevealController.h in Headers */,
+				3727659AECD24C1DDE92DEBC7C2E9C03 /* PKRevealControllerView.h in Headers */,
+				A4945C7D1CEA63B111CFFB1820F14562 /* PKSequentialAnimation.h in Headers */,
+				E9F6AC51BFC9D08E61AF109286712668 /* UIViewController+PKRevealController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE061CAC4851C9A86558357206AD924B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,25 +332,43 @@
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = 9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */;
+			productReference = C704B44B1725A5A675AF893F9D1BFCA6 /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1D87D796D18425F4AB451350C16124CF /* Pods-Training */ = {
+		55A54929357D9BCA8781D5E6C0BFF876 /* Pods-Training */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 945E445EA60EAA7F5A2C3B5E9547CB4C /* Build configuration list for PBXNativeTarget "Pods-Training" */;
+			buildConfigurationList = 2A14628FDDF10B852738573716EF9682 /* Build configuration list for PBXNativeTarget "Pods-Training" */;
 			buildPhases = (
-				634E064ECEF7A0D80EA3B4F793929157 /* Headers */,
-				B310ED911EDE336E7EFC8F32D504194F /* Sources */,
-				72396340F3857EBE1799AEEE3BF33011 /* Frameworks */,
+				BE061CAC4851C9A86558357206AD924B /* Headers */,
+				8D84CDFBA48D2F8DF82E59283AD5BF60 /* Sources */,
+				948040AA113F498F030CF606EFE23944 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C08B5F10C27D5DDAB6FB5A0772019C39 /* PBXTargetDependency */,
+				87641A2EE232C0BC225EB30D45FB9BDB /* PBXTargetDependency */,
+				1953308D4486E89051DFF809D276543F /* PBXTargetDependency */,
 			);
 			name = "Pods-Training";
 			productName = "Pods-Training";
-			productReference = 5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */;
+			productReference = 3CC8AED9972EFA2A70ADD82AE77E7285 /* libPods-Training.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		692CAA19FBF36AD1938F9650B7C17709 /* PKRevealController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2614936AFB3484D87FDAC1083D524532 /* Build configuration list for PBXNativeTarget "PKRevealController" */;
+			buildPhases = (
+				2EB01B33B2B48606A400594E25BA04BD /* Headers */,
+				D9597F7F2182005C9137588E4019D9D7 /* Sources */,
+				FFED1059784A8FD6AA9B5DB2F298B5B6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PKRevealController;
+			productName = PKRevealController;
+			productReference = C468C2A7B6E785793ACFD04845C07E68 /* libPKRevealController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -248,12 +388,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F572EF8FB1B4E537031CA84643FB2164 /* Products */;
+			productRefGroup = D4724DA7D3A34BADB6F39E80E7E1E006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1CC1E04196D9674880859F4086A7DCCE /* FMDB */,
-				1D87D796D18425F4AB451350C16124CF /* Pods-Training */,
+				692CAA19FBF36AD1938F9650B7C17709 /* PKRevealController */,
+				55A54929357D9BCA8781D5E6C0BFF876 /* Pods-Training */,
 			);
 		};
 /* End PBXProject section */
@@ -272,29 +413,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B310ED911EDE336E7EFC8F32D504194F /* Sources */ = {
+		8D84CDFBA48D2F8DF82E59283AD5BF60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3E567B61D587198A974178EBC18C69 /* Pods-Training-dummy.m in Sources */,
+				4E33CE2C58563A877CB6DD2E999FA131 /* Pods-Training-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9597F7F2182005C9137588E4019D9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED37F644E24C18B175C3DEDCA19E2E59 /* CAAnimation+PKIdentifier.m in Sources */,
+				1C55711A4EDA31814C16529C59646D90 /* CALayer+PKConvenienceAnimations.m in Sources */,
+				411DAC5F6B2EE9038B4209E15640D7D7 /* NSObject+PKBlocks.m in Sources */,
+				9B35E26079C543F011E46174E1F73DBF /* PKAnimation.m in Sources */,
+				B937783F029383011F7D5C9E1565843C /* PKLayerAnimator.m in Sources */,
+				11232B54ECFBF240E02F218F3DDAE610 /* PKLog.m in Sources */,
+				3816CFD02791D36BAD3406C5B401C2BB /* PKRevealController-dummy.m in Sources */,
+				77290A669405B0BF8F054A507C75DE7C /* PKRevealController.m in Sources */,
+				9CE1D0581A7A391762F5791BE72D5B9C /* PKRevealControllerView.m in Sources */,
+				57E5AB92B0DFEC8447D7F68182F70640 /* PKSequentialAnimation.m in Sources */,
+				88D146B005703143C1822DBC8721442B /* UIViewController+PKRevealController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C08B5F10C27D5DDAB6FB5A0772019C39 /* PBXTargetDependency */ = {
+		1953308D4486E89051DFF809D276543F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKRevealController;
+			target = 692CAA19FBF36AD1938F9650B7C17709 /* PKRevealController */;
+			targetProxy = 09B70A2EFB3C4CDDD80E9120CB823AA6 /* PBXContainerItemProxy */;
+		};
+		87641A2EE232C0BC225EB30D45FB9BDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FMDB;
 			target = 1CC1E04196D9674880859F4086A7DCCE /* FMDB */;
-			targetProxy = 9321E050CA1206DC58ABA427D307D9B8 /* PBXContainerItemProxy */;
+			targetProxy = 13F4E6C50D356CD37B6F317BA2675754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0707F5734309E4EF354EA19D1A246AA5 /* Release */ = {
+		0C6F26CE431B783A2F917607F363117F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C38AD4B2699C22041A086DE5A3D8015F /* Pods-Training.release.xcconfig */;
+			baseConfigurationReference = 91A367D12C2AABBDBAC0A611EFFD7A49 /* PKRevealController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PKRevealController/PKRevealController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PKRevealController;
+				PRODUCT_NAME = PKRevealController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C137090F9EA1DB777D3CE689323A2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B4DA3E65AE688745AE30B378608660 /* Pods-Training.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -311,13 +500,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		29044349A512E2C7AE396890752FA1FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */;
+			baseConfigurationReference = 3084DA4878F57778CA51E7F8287989D6 /* FMDB.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -339,9 +527,9 @@
 			};
 			name = Debug;
 		};
-		701ECF1A669114B44E68D1853E492C82 /* Debug */ = {
+		6CE93EA7FFDC32A30F00140CFEE0B3F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B4DA3E65AE688745AE30B378608660 /* Pods-Training.debug.xcconfig */;
+			baseConfigurationReference = C38AD4B2699C22041A086DE5A3D8015F /* Pods-Training.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -358,8 +546,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -485,9 +674,32 @@
 			};
 			name = Debug;
 		};
+		D0C31E069C860FEFF6D3021505085676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A367D12C2AABBDBAC0A611EFFD7A49 /* PKRevealController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PKRevealController/PKRevealController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PKRevealController;
+				PRODUCT_NAME = PKRevealController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		FB3BF70CC474E51618A50C42F086EEAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */;
+			baseConfigurationReference = 3084DA4878F57778CA51E7F8287989D6 /* FMDB.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -513,6 +725,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2614936AFB3484D87FDAC1083D524532 /* Build configuration list for PBXNativeTarget "PKRevealController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C31E069C860FEFF6D3021505085676 /* Debug */,
+				0C6F26CE431B783A2F917607F363117F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A14628FDDF10B852738573716EF9682 /* Build configuration list for PBXNativeTarget "Pods-Training" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C137090F9EA1DB777D3CE689323A2D1 /* Debug */,
+				6CE93EA7FFDC32A30F00140CFEE0B3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -527,15 +757,6 @@
 			buildConfigurations = (
 				29044349A512E2C7AE396890752FA1FB /* Debug */,
 				FB3BF70CC474E51618A50C42F086EEAF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		945E445EA60EAA7F5A2C3B5E9547CB4C /* Build configuration list for PBXNativeTarget "Pods-Training" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				701ECF1A669114B44E68D1853E492C82 /* Debug */,
-				0707F5734309E4EF354EA19D1A246AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

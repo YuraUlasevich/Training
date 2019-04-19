@@ -2,17 +2,21 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - PKRevealController (2.0.6)
 
 DEPENDENCIES:
   - FMDB
+  - PKRevealController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
+    - PKRevealController
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
 
-PODFILE CHECKSUM: b5df7cdd930e8f59b6b075359072da46582f3439
+PODFILE CHECKSUM: 478ddd2705d541154445896d522e86be6e1c2a0c
 
 COCOAPODS: 1.6.1

@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55A54929357D9BCA8781D5E6C0BFF876"
-               BuildableName = "libPods-Training.a"
-               BlueprintName = "Pods-Training"
+               BlueprintIdentifier = "692CAA19FBF36AD1938F9650B7C17709"
+               BuildableName = "libPKRevealController.a"
+               BlueprintName = "PKRevealController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
