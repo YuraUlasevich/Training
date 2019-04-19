@@ -101,51 +101,22 @@
         _passwordRegisterTextField.layer.borderWidth = 3.0f;
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
-        
-        BOOL flagForLogin = NO;
-        BOOL flagForEmail = NO;
-        for (int i=0; i<_loginItems.count; i++) {
-            if([_loginItems[i] isEqualToString:_loginRegisterTextField.text]){
-                flagForLogin = YES;
-                break;
-            }
-            if([_emailItems[i] isEqualToString:_emailRegisterTextField.text]){
-                flagForEmail = YES;
-                break;
-            }
-        }
-        if (!flagForLogin && !flagForEmail) {
             //определяем путь к файлу с базой
             NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";        //создаем подключение к базе
             FMDatabase *database;
             database = [FMDatabase databaseWithPath:databasePath];
             database.traceExecution = false; //выводит подробный лог запросов в консоль
             [database open];
-            
-            NSString* testStr=[NSString stringWithFormat:@"INSERT INTO client (id_client, firstname, second_name, email, login, password, height, weight) VALUES (%lu, '%@', '%@', '%@', '%@', '%@', %li,%li)", (unsigned long)_loginItems.count+1, _firstNameRegisterTextField.text, _secondNameRegisterTextField.text, _emailRegisterTextField.text, _loginRegisterTextField.text, _passwordRegisterTextField.text, [_heightRegisterTextField.text integerValue], [_weightRegisterTextField.text integerValue]];
-            
+            NSString* testStr=[NSString stringWithFormat:@"INSERT INTO client (firstname, second_name, email, login, password, height, weight) VALUES ('%@', '%@', '%@', '%@', '%@', %li,%li)", _firstNameRegisterTextField.text, _secondNameRegisterTextField.text, _emailRegisterTextField.text, _loginRegisterTextField.text, _passwordRegisterTextField.text, [_heightRegisterTextField.text integerValue], [_weightRegisterTextField.text integerValue]];
             if (![database executeUpdate:testStr]) {
                 NSLog(@"db insert err");
+                [database close];
             }
-            
-            [database close];
-            
-            UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-            MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
-            [self presentViewController:myVC animated:YES completion:nil];
-        }
-        else if(flagForLogin){
-            _loginRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
-            _loginRegisterTextField.layer.borderWidth = 3.0f;
-        }
-        else if (flagForEmail){
-            _emailRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
-            _emailRegisterTextField.layer.borderWidth = 3.0f;
-        }
-        
-        
-        
-        
+            else{
+                UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+                MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+                [self presentViewController:myVC animated:YES completion:nil];
+            }
     }
 }
 
@@ -158,7 +129,6 @@
     database = [FMDatabase databaseWithPath:databasePath];
     database.traceExecution = false; //выводит подробный лог запросов в консоль
     [database open];
-    
     //выполняем выборку из таблицы client
     _results = [database executeQuery:@"select * from client"];
     while([_results next]) {
@@ -169,8 +139,6 @@
         [_emailItems insertObject:email atIndex:[_emailItems count]];
         NSLog(@"%@", login);
     }
-    
-    //удаляем подключение к базе
     [database close];
 }
 
