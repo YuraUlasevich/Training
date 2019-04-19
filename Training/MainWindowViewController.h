@@ -11,9 +11,19 @@
 
 
 
-@interface MainWindowViewController : UIViewController
+@interface MainWindowViewController : UIViewController{
+    IBOutlet UIView *transV;
+    IBOutlet UIView *sidePanel;
+    IBOutlet UIButton *menuBtn;
+}
+- (IBAction)calendarButtonPressed:(UIButton *)sender;
+- (IBAction)myTrainingsButtonPressed:(UIButton *)sender;
+- (IBAction)aboutMeButtonPressed:(UIButton *)sender;
 
-
+- (IBAction)trainsersButtonPressed:(UIButton *)sender;
+@property(nonatomic) UIView *transV;
+@property(nonatomic) UIView *sidePanel;
+@property(nonatomic) UIButton *menuBtn;
 @end
 
 
