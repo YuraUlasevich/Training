@@ -8,6 +8,7 @@
 
 #import "AboutMeViewController.h"
 
+
 @interface AboutMeViewController ()
 
 @end
@@ -29,4 +30,9 @@
 }
 */
 
+- (IBAction)mainBtnPress:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
 @end

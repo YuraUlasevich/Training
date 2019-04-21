@@ -71,9 +71,7 @@
     MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"AboutMeViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
-- (void)mainBtnPressed:(UIButton *)sender{
-    
-}
+
 - (void)trainersBtnPressed:(UIButton *)sender{
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
     MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];

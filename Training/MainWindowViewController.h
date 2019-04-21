@@ -17,7 +17,6 @@
     IBOutlet UIButton *menuBtn;
 }
 - (IBAction)aboutMeBtnPressed:(UIButton *)sender;
-- (IBAction)mainBtnPressed:(UIButton *)sender;
 - (IBAction)trainersBtnPressed:(UIButton *)sender;
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender;
 - (IBAction)calendarBtnPressed:(UIButton *)sender;

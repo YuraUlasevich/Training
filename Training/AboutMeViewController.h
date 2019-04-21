@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "MainWindowViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
+
+
 
 @interface AboutMeViewController : UIViewController
+- (IBAction)mainBtnPress:(UIButton *)sender;
 
 @end
 
-NS_ASSUME_NONNULL_END
+
