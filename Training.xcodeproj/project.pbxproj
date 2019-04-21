@@ -11,6 +11,11 @@
 		343FC3CB225CA6D70007AE47 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343FC3CA225CA6D70007AE47 /* Second.storyboard */; };
 		34593D3722664D2600CC2A43 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34593D3622664D2600CC2A43 /* libsqlite3.tbd */; };
 		3463797122587E5900D3A36E /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463797022587E5900D3A36E /* RegisterController.m */; };
+		347EDC82226CEAFE001533ED /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC81226CEAFE001533ED /* AboutMe.storyboard */; };
+		347EDC84226CEB12001533ED /* Trainers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC83226CEB12001533ED /* Trainers.storyboard */; };
+		347EDC86226CEB41001533ED /* MyTrainings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC85226CEB41001533ED /* MyTrainings.storyboard */; };
+		347EDC88226CEB68001533ED /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC87226CEB68001533ED /* Calendar.storyboard */; };
+		347EDC8A226CEB7E001533ED /* Trainings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC89226CEB7E001533ED /* Trainings.storyboard */; };
 		3496328522665A1F0055C2B8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */; };
 		349632922267747A0055C2B8 /* my.db in Resources */ = {isa = PBXBuildFile; fileRef = 34963291226774790055C2B8 /* my.db */; };
 		34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F3F2255CBDA0078C67A /* AppDelegate.m */; };
@@ -30,6 +35,11 @@
 		34593D3622664D2600CC2A43 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3463796F22587E5900D3A36E /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		3463797022587E5900D3A36E /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		347EDC81226CEAFE001533ED /* AboutMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutMe.storyboard; sourceTree = "<group>"; };
+		347EDC83226CEB12001533ED /* Trainers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trainers.storyboard; sourceTree = "<group>"; };
+		347EDC85226CEB41001533ED /* MyTrainings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTrainings.storyboard; sourceTree = "<group>"; };
+		347EDC87226CEB68001533ED /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		347EDC89226CEB7E001533ED /* Trainings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trainings.storyboard; sourceTree = "<group>"; };
 		34923427226857BB00D20897 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		34963291226774790055C2B8 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
@@ -106,6 +116,11 @@
 				3463796F22587E5900D3A36E /* RegisterController.h */,
 				34963291226774790055C2B8 /* my.db */,
 				3463797022587E5900D3A36E /* RegisterController.m */,
+				347EDC81226CEAFE001533ED /* AboutMe.storyboard */,
+				347EDC83226CEB12001533ED /* Trainers.storyboard */,
+				347EDC85226CEB41001533ED /* MyTrainings.storyboard */,
+				347EDC87226CEB68001533ED /* Calendar.storyboard */,
+				347EDC89226CEB7E001533ED /* Trainings.storyboard */,
 				343FC3CA225CA6D70007AE47 /* Second.storyboard */,
 				34CA6F472255CBDC0078C67A /* Assets.xcassets */,
 				34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */,
@@ -184,7 +199,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347EDC88226CEB68001533ED /* Calendar.storyboard in Resources */,
+				347EDC82226CEAFE001533ED /* AboutMe.storyboard in Resources */,
+				347EDC8A226CEB7E001533ED /* Trainings.storyboard in Resources */,
 				343FC3CB225CA6D70007AE47 /* Second.storyboard in Resources */,
+				347EDC86226CEB41001533ED /* MyTrainings.storyboard in Resources */,
+				347EDC84226CEB12001533ED /* Trainers.storyboard in Resources */,
 				34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */,
 				349632922267747A0055C2B8 /* my.db in Resources */,
 				34CA6F482255CBDC0078C67A /* Assets.xcassets in Resources */,

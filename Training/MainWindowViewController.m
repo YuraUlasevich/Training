@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _count = 0;
     UITapGestureRecognizer *tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideSidePanel:)];
     tapper.numberOfTapsRequired = 1;
     [transV addGestureRecognizer:tapper];
@@ -36,13 +37,27 @@
 
 
 -(IBAction)buttonPressed:(id)sender{
+    _count+=1;
     if(sender == menuBtn){
-        [transV setHidden:NO];
-        [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            CGRect frame = self->sidePanel.frame;
-            frame.origin.x = 0;
-            self->sidePanel.frame = frame;
-        } completion:nil];
+        if(_count%2==1){
+            [transV setHidden:NO];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = 0;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        } else if(_count%2==0){
+            [transV setHidden:YES];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = -self->sidePanel.frame.size.width;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        }
+        
+        
+        
+        
     }
 }
 /*
@@ -65,6 +80,18 @@
 }
 
 - (IBAction)aboutMeButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)aboutMeBtnPressed:(UIButton *)sender {
+}
+
+- (IBAction)trainersBtnPressed:(UIButton *)sender {
+}
+
+- (IBAction)myTrainingsBtnPressed:(UIButton *)sender {
+}
+
+- (IBAction)calendarBtnPressed:(UIButton *)sender {
 }
 
 - (IBAction)trainsersButtonPressed:(UIButton *)sender {
