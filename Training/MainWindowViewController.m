@@ -54,10 +54,6 @@
                 self->sidePanel.frame = frame;
             } completion:nil];
         }
-        
-        
-        
-        
     }
 }
 /*
@@ -70,30 +66,33 @@
 }
 */
 
-- (IBAction)aboutButtonPressed:(id)sender {
+- (void)aboutMeBtnPressed:(UIButton *)sender{
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"AboutMe" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"AboutMeViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+- (void)mainBtnPressed:(UIButton *)sender{
+    
+}
+- (void)trainersBtnPressed:(UIButton *)sender{
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+- (void)myTrainingsBtnPressed:(UIButton *)sender{
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+- (void)calendarBtnPressed:(UIButton *)sender{
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Calendar" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"CalendarViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
 }
 
-- (IBAction)calendarButtonPressed:(UIButton *)sender {
-}
-
-- (IBAction)myTrainingsButtonPressed:(UIButton *)sender {
-}
-
-- (IBAction)aboutMeButtonPressed:(UIButton *)sender {
-}
-
-- (IBAction)aboutMeBtnPressed:(UIButton *)sender {
-}
-
-- (IBAction)trainersBtnPressed:(UIButton *)sender {
-}
-
-- (IBAction)myTrainingsBtnPressed:(UIButton *)sender {
-}
-
-- (IBAction)calendarBtnPressed:(UIButton *)sender {
-}
-
-- (IBAction)trainsersButtonPressed:(UIButton *)sender {
+- (IBAction)trainingsBtnPressed:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
 }
 @end

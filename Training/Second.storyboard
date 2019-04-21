@@ -54,8 +54,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="aboutMeBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="yZi-Zc-u5Z"/>
-                                            <action selector="aboutMeButtonPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="kkq-ND-8bW"/>
+                                            <action selector="aboutMeBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="xVs-g7-3Ii"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipO-JR-CXt">
@@ -66,7 +65,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="aboutMeButtonPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="bnq-3k-e4r"/>
+                                            <action selector="mainBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="OaN-nq-bc3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ2-rI-ouB">
@@ -77,8 +76,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="trainersBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="ORL-p8-gs4"/>
-                                            <action selector="trainsersButtonPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="OWp-of-Tx5"/>
+                                            <action selector="trainersBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="ML9-3a-0XV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S5-R0-TMJ">
@@ -89,20 +87,30 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="myTrainingsBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="60h-HN-Gjv"/>
-                                            <action selector="myTrainingsButtonPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="6Tq-ln-QvM"/>
+                                            <action selector="myTrainingsBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="WhQ-ed-jVc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks6-bt-RFZ">
+                                        <rect key="frame" x="18" y="204" width="234" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Trainings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calendarBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="2NN-Pr-WuE"/>
+                                            <action selector="trainingsBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="JMs-Kz-PN8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW1-eE-sfX">
-                                        <rect key="frame" x="18" y="204" width="234" height="43"/>
+                                        <rect key="frame" x="18" y="255" width="234" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Calendar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="calendarBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="s2f-z4-ySo"/>
-                                            <action selector="calendarButtonPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="b7b-Ea-1Or"/>
+                                            <action selector="calendarBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="x8E-qM-boo"/>
                                         </connections>
                                     </button>
                                 </subviews>
