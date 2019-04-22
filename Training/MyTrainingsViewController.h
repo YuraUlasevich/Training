@@ -7,11 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "MainWindowViewController.h"
 
-@interface MyTrainingsViewController : UIViewController
+@interface MyTrainingsViewController : UIViewController{
+    IBOutlet UIView *transV;
+    IBOutlet UIView *sidePanel;
+    IBOutlet UIButton *menuBtn;
+}
 - (IBAction)mainBtnPressed:(UIButton *)sender;
+- (IBAction)aboutMeBtnPressed:(UIButton *)sender;
+- (IBAction)trainersBtnPressed:(UIButton *)sender;
+- (IBAction)trainingsBtnPressed:(UIButton *)sender;
+- (IBAction)calendarBtnPressed:(UIButton *)sender;
 
+
+
+@property(nonatomic) UIView *transV;
+@property(nonatomic) UIView *sidePanel;
+@property(nonatomic) UIButton *menuBtn;
+@property int count;
 @end
 
 

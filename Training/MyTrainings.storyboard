@@ -29,6 +29,9 @@
                                         <state key="normal" title="Menu">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="QjZ-q6-swM" eventType="touchUpInside" id="Vfy-v8-AUR"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My trainings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ni1-Mk-Obk">
                                         <rect key="frame" x="136" y="62" width="142" height="33"/>
@@ -40,13 +43,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.50643324710000004" green="0.41741411969999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-IK-Kok">
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-IK-Kok">
                                 <rect key="frame" x="0.0" y="110" width="414" height="753"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50643324710000004" green="0.41741411969999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fG4-Wf-pce">
-                                <rect key="frame" x="0.0" y="110" width="260" height="752"/>
+                                <rect key="frame" x="-260" y="110" width="260" height="752"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FO-tn-dVa">
@@ -56,6 +59,9 @@
                                         <state key="normal" title="Trainings">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="trainingsBtnPressed:" destination="QjZ-q6-swM" eventType="touchUpInside" id="k1z-VL-MXB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-X1-aUK">
                                         <rect key="frame" x="18" y="0.0" width="234" height="43"/>
@@ -75,6 +81,9 @@
                                         <state key="normal" title="About me">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="aboutMeBtnPressed:" destination="QjZ-q6-swM" eventType="touchUpInside" id="jiH-D1-JT5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyv-IH-hAK">
                                         <rect key="frame" x="18" y="102" width="234" height="43"/>
@@ -83,6 +92,9 @@
                                         <state key="normal" title="Trainers">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="trainersBtnPressed:" destination="QjZ-q6-swM" eventType="touchUpInside" id="546-tb-uwc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZH-ZS-tYQ">
                                         <rect key="frame" x="18" y="204" width="234" height="43"/>
@@ -91,6 +103,9 @@
                                         <state key="normal" title="Calendar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calendarBtnPressed:" destination="QjZ-q6-swM" eventType="touchUpInside" id="iIh-cA-dxq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50643324710000004" green="0.41741411969999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -99,6 +114,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ddp-FU-pjw"/>
                     </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="T67-QY-Kco" id="qS5-pw-Ccu"/>
+                        <outlet property="sidePanel" destination="fG4-Wf-pce" id="kXa-ET-CW0"/>
+                        <outlet property="transV" destination="2fB-IK-Kok" id="7DU-Qr-EOF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIZ-iV-PjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

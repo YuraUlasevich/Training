@@ -13,12 +13,49 @@
 @end
 
 @implementation TrainingsViewController
-
+@synthesize transV, menuBtn, sidePanel;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _count = 0;
+    UITapGestureRecognizer *tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideSidePanel:)];
+    tapper.numberOfTapsRequired = 1;
+    [transV addGestureRecognizer:tapper];
 }
 
+-(void) hideSidePanel:(UIGestureRecognizer *)gesture{
+    if(gesture.state == UIGestureRecognizerStateEnded){
+        [transV setHidden:YES];
+        [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            CGRect frame = self->sidePanel.frame;
+            frame.origin.x = -self->sidePanel.frame.size.width;
+            self->sidePanel.frame = frame;
+        } completion:nil];
+    }
+}
+
+
+
+-(IBAction)buttonPressed:(id)sender{
+    _count+=1;
+    if(sender == menuBtn){
+        if(_count%2==1){
+            [transV setHidden:NO];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = 0;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        } else if(_count%2==0){
+            [transV setHidden:YES];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = -self->sidePanel.frame.size.width;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        }
+    }
+}
 /*
 #pragma mark - Navigation
 
@@ -31,7 +68,31 @@
 
 - (IBAction)mainBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+    TrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+
+- (IBAction)aboutMeBtnPressed:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"AboutMe" bundle:nil];
+    TrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"AboutMeViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+
+- (IBAction)trainersBtnPressed:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
+    TrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+
+- (IBAction)myTrainings:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
+    TrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+
+- (IBAction)calendarBtnPressed:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Calendar" bundle:nil];
+    TrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"CalendarViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 @end

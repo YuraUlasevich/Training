@@ -21,7 +21,7 @@
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender;
 - (IBAction)calendarBtnPressed:(UIButton *)sender;
 - (IBAction)trainingsBtnPressed:(UIButton *)sender;
-
+- (IBAction)mainBtnPress:(UIButton *)sender;
 
 
 @property(nonatomic) UIView *transV;
