@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2282A49657358E55BBC0D8C6 /* libPods-Training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE1C5FE894198267F0B9804 /* libPods-Training.a */; };
 		343FC3C9225CA08B0007AE47 /* MainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */; };
 		343FC3CB225CA6D70007AE47 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343FC3CA225CA6D70007AE47 /* Second.storyboard */; };
 		34593D3722664D2600CC2A43 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34593D3622664D2600CC2A43 /* libsqlite3.tbd */; };
@@ -18,11 +19,13 @@
 		347EDC88226CEB68001533ED /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC87226CEB68001533ED /* Calendar.storyboard */; };
 		347EDC8A226CEB7E001533ED /* Trainings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347EDC89226CEB7E001533ED /* Trainings.storyboard */; };
 		347EDC8D226CEC9D001533ED /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC8C226CEC9D001533ED /* AboutMeViewController.m */; };
-		347EDC90226CED6B001533ED /* TrainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC8F226CED6B001533ED /* TrainersViewController.m */; };
 		347EDC9C226CEE19001533ED /* MyTrainingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */; };
 		347EDC9F226CEE37001533ED /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC9E226CEE37001533ED /* CalendarViewController.m */; };
 		3496328522665A1F0055C2B8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */; };
 		349632922267747A0055C2B8 /* my.db in Resources */ = {isa = PBXBuildFile; fileRef = 34963291226774790055C2B8 /* my.db */; };
+		34C393C12270C10E009BB0DC /* TrainersTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */; };
+		34C393C62270CFC5009BB0DC /* UIScrollView+FloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */; };
+		34C393CB2270D3D9009BB0DC /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C393CA2270D3D9009BB0DC /* image0.png */; };
 		34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F3F2255CBDA0078C67A /* AppDelegate.m */; };
 		34CA6F432255CBDA0078C67A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F422255CBDA0078C67A /* ViewController.m */; };
 		34CA6F462255CBDA0078C67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F442255CBDA0078C67A /* Main.storyboard */; };
@@ -30,10 +33,10 @@
 		34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */; };
 		34CA6F4E2255CBDC0078C67A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F4D2255CBDC0078C67A /* main.m */; };
 		34CA6F5622571A250078C67A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F5522571A250078C67A /* User.m */; };
-		52DECEDEDBD3D3B5832D3664 /* libPods-Training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E82F196EF460D06AAB1157 /* libPods-Training.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AFC7A1A9613A14C0EC82036 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
 		343FC3C7225CA08B0007AE47 /* MainWindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowViewController.h; sourceTree = "<group>"; };
 		343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowViewController.m; sourceTree = "<group>"; };
 		343FC3CA225CA6D70007AE47 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
@@ -49,8 +52,6 @@
 		347EDC89226CEB7E001533ED /* Trainings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trainings.storyboard; sourceTree = "<group>"; };
 		347EDC8B226CEC9D001533ED /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		347EDC8C226CEC9D001533ED /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
-		347EDC8E226CED6B001533ED /* TrainersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainersViewController.h; sourceTree = "<group>"; };
-		347EDC8F226CED6B001533ED /* TrainersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainersViewController.m; sourceTree = "<group>"; };
 		347EDC9A226CEE19001533ED /* MyTrainingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTrainingsViewController.h; sourceTree = "<group>"; };
 		347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTrainingsViewController.m; sourceTree = "<group>"; };
 		347EDC9D226CEE37001533ED /* CalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
@@ -58,6 +59,11 @@
 		34923427226857BB00D20897 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		34963291226774790055C2B8 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
+		34C393BF2270C10E009BB0DC /* TrainersTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainersTableTableViewController.h; sourceTree = "<group>"; };
+		34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainersTableTableViewController.m; sourceTree = "<group>"; };
+		34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FloatingButton.m"; sourceTree = "<group>"; };
+		34C393C72270CFE1009BB0DC /* UIScrollView+FloatingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FloatingButton.h"; sourceTree = "<group>"; };
+		34C393CA2270D3D9009BB0DC /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
 		34CA6F3B2255CBDA0078C67A /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CA6F3E2255CBDA0078C67A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34CA6F3F2255CBDA0078C67A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,9 +76,8 @@
 		34CA6F4D2255CBDC0078C67A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34CA6F5422571A250078C67A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		34CA6F5522571A250078C67A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		743BA47ED3FE7748BC43D7B1 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
-		80E82F196EF460D06AAB1157 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB87BBFAF95B7C5B577CE45C /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
+		B82A489F434BD65212DC984D /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE1C5FE894198267F0B9804 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +87,7 @@
 			files = (
 				3496328522665A1F0055C2B8 /* libsqlite3.0.tbd in Frameworks */,
 				34593D3722664D2600CC2A43 /* libsqlite3.tbd in Frameworks */,
-				52DECEDEDBD3D3B5832D3664 /* libPods-Training.a in Frameworks */,
+				2282A49657358E55BBC0D8C6 /* libPods-Training.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +99,7 @@
 			children = (
 				3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */,
 				34593D3622664D2600CC2A43 /* libsqlite3.tbd */,
-				80E82F196EF460D06AAB1157 /* libPods-Training.a */,
+				FDE1C5FE894198267F0B9804 /* libPods-Training.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,15 +137,18 @@
 				347EDC9D226CEE37001533ED /* CalendarViewController.h */,
 				347EDC9E226CEE37001533ED /* CalendarViewController.m */,
 				347EDC8B226CEC9D001533ED /* AboutMeViewController.h */,
-				347EDC8E226CED6B001533ED /* TrainersViewController.h */,
-				347EDC8F226CED6B001533ED /* TrainersViewController.m */,
 				347EDC8C226CEC9D001533ED /* AboutMeViewController.m */,
 				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,
 				3463796F22587E5900D3A36E /* RegisterController.h */,
 				34963291226774790055C2B8 /* my.db */,
 				3463797022587E5900D3A36E /* RegisterController.m */,
+				34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */,
+				34C393C72270CFE1009BB0DC /* UIScrollView+FloatingButton.h */,
 				347EDC81226CEAFE001533ED /* AboutMe.storyboard */,
 				347EDC83226CEB12001533ED /* Trainers.storyboard */,
+				34C393BF2270C10E009BB0DC /* TrainersTableTableViewController.h */,
+				34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */,
+				34C393CA2270D3D9009BB0DC /* image0.png */,
 				347EDC85226CEB41001533ED /* MyTrainings.storyboard */,
 				347EDC87226CEB68001533ED /* Calendar.storyboard */,
 				347EDC89226CEB7E001533ED /* Trainings.storyboard */,
@@ -160,8 +168,8 @@
 		C98E954909F1C6CBAF67FF58 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB87BBFAF95B7C5B577CE45C /* Pods-Training.debug.xcconfig */,
-				743BA47ED3FE7748BC43D7B1 /* Pods-Training.release.xcconfig */,
+				B82A489F434BD65212DC984D /* Pods-Training.debug.xcconfig */,
+				0AFC7A1A9613A14C0EC82036 /* Pods-Training.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -173,7 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34CA6F512255CBDC0078C67A /* Build configuration list for PBXNativeTarget "Training" */;
 			buildPhases = (
-				975FC7FB9C833F7E0578444C /* [CP] Check Pods Manifest.lock */,
+				C24AAC65591B7A4C17F6C28D /* [CP] Check Pods Manifest.lock */,
 				34CA6F372255CBDA0078C67A /* Sources */,
 				34CA6F382255CBDA0078C67A /* Frameworks */,
 				34CA6F392255CBDA0078C67A /* Resources */,
@@ -230,6 +238,7 @@
 				343FC3CB225CA6D70007AE47 /* Second.storyboard in Resources */,
 				347EDC86226CEB41001533ED /* MyTrainings.storyboard in Resources */,
 				347EDC84226CEB12001533ED /* Trainers.storyboard in Resources */,
+				34C393CB2270D3D9009BB0DC /* image0.png in Resources */,
 				34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */,
 				349632922267747A0055C2B8 /* my.db in Resources */,
 				34CA6F482255CBDC0078C67A /* Assets.xcassets in Resources */,
@@ -240,7 +249,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		975FC7FB9C833F7E0578444C /* [CP] Check Pods Manifest.lock */ = {
+		C24AAC65591B7A4C17F6C28D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,15 +280,16 @@
 			files = (
 				34CA6F5622571A250078C67A /* User.m in Sources */,
 				34CA6F432255CBDA0078C67A /* ViewController.m in Sources */,
-				347EDC90226CED6B001533ED /* TrainersViewController.m in Sources */,
 				3474E48D226D06F00022C7D5 /* TrainingsViewController.m in Sources */,
 				34CA6F4E2255CBDC0078C67A /* main.m in Sources */,
 				343FC3C9225CA08B0007AE47 /* MainWindowViewController.m in Sources */,
 				347EDC8D226CEC9D001533ED /* AboutMeViewController.m in Sources */,
 				347EDC9C226CEE19001533ED /* MyTrainingsViewController.m in Sources */,
+				34C393C12270C10E009BB0DC /* TrainersTableTableViewController.m in Sources */,
 				34CA6F402255CBDA0078C67A /* AppDelegate.m in Sources */,
 				347EDC9F226CEE37001533ED /* CalendarViewController.m in Sources */,
 				3463797122587E5900D3A36E /* RegisterController.m in Sources */,
+				34C393C62270CFC5009BB0DC /* UIScrollView+FloatingButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +429,7 @@
 		};
 		34CA6F522255CBDC0078C67A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB87BBFAF95B7C5B577CE45C /* Pods-Training.debug.xcconfig */;
+			baseConfigurationReference = B82A489F434BD65212DC984D /* Pods-Training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,7 +446,7 @@
 		};
 		34CA6F532255CBDC0078C67A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 743BA47ED3FE7748BC43D7B1 /* Pods-Training.release.xcconfig */;
+			baseConfigurationReference = 0AFC7A1A9613A14C0EC82036 /* Pods-Training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

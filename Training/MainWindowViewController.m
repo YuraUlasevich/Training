@@ -74,7 +74,7 @@
 
 - (void)trainersBtnPressed:(UIButton *)sender{
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
-    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersTableTableViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 - (void)myTrainingsBtnPressed:(UIButton *)sender{

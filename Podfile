@@ -7,5 +7,4 @@ target 'Training' do
 
   # Pods for Training
   pod 'FMDB'
-  pod 'PKRevealController'
 end
