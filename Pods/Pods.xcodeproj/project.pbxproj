@@ -7,23 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01082296B2FFCAAA6544232E9CE924EE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3216A9EA48F02E1770F54565966D3186 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */; };
-		35382B71707324690D200C461EA3F0C3 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4A61831FE9CD3D2D38CF2B2364A3E45E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		562D990DD2B3B57373DA57A4D6049583 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6E7896F73871D7BAF437FCA4CC91517E /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		88F04630237660399A8402C7B0EB11BA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9B60A3F7EA094633D8AE153C611FAB6F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A2D93DC9BD23738FF01DC59200280372 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A793ECA977668D073CABEDC2BEDF75A5 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AA3E567B61D587198A974178EBC18C69 /* Pods-Training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */; };
-		CF3C42C8DDF68A1C107238AEBE01A6A2 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E413014A305FADEBA8EEE75EF409112E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01082296B2FFCAAA6544232E9CE924EE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F6133A791F550507BFC61989CD4F72 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		07099BF93A1201E7D22DFABC29E42E62 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03828C957D8713567E96C8FD94A4FF20 /* RSDFDatePickerView.m */; };
+		3165CA063C6A3201B8148BC2D3FC81F4 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB0B5C97B87A0ADCAB7B38EF4BB58B /* RSDFDatePickerCollectionView.m */; };
+		3216A9EA48F02E1770F54565966D3186 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F5C1DAAA29CF333180BA4CFAFBC57 /* FMDB-dummy.m */; };
+		35382B71707324690D200C461EA3F0C3 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDB9F006B44208A2F2490BF5D89EE4E /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		393D1F135AF85EF29CCF97F605C4FB5E /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A79CF5F4AE0AD79A095BEF071C7D7A /* RSDFDatePickerCollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39552AF1E4AD22555D71314B734060F4 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = 215C0207A85F124F92F451E23C8D69AE /* RSDFDatePickerDaysOfWeekView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DD536051E4A24DD3B27D3056BFDDE6D /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BDB5952C2F91ED692AFE4960ECA088 /* RSDFDatePickerMonthHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A61831FE9CD3D2D38CF2B2364A3E45E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2A3491F6602388019EC0316ACA5085 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4D2B50D2010FB00D507CAF1684CF1404 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = A9201F73C3BC9A397449C186682550A4 /* RSDayFlow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		562D990DD2B3B57373DA57A4D6049583 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BB811863C56325BF1DCB740EFB5725F8 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B6E77FBCE7B534228AD8AE5687FA930 /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 07847B19723499FEA072D96839488117 /* RSDFDatePickerCollectionViewLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		634571241389D0483D2BFA3EF5BC0E7A /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 25696BCF8F48EB542C282380EEEA9B29 /* RSDFDatePickerCollectionViewLayout.m */; };
+		63E5A657D44A810099054BCD61A2055F /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0181A2ECCCDFA58A55D0FB02045E3C58 /* RSDFDatePickerDaysOfWeekView.m */; };
+		6C7ED7729736832D4D3CE6C979D8BF25 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2D07C0CE66C91930875C97ED390522 /* RSDFDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E7896F73871D7BAF437FCA4CC91517E /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1E1E9294BBEBC6213D806714AEBC32 /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74AE7760AE03166170029A1D24D5458D /* Pods-Training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */; };
+		88F04630237660399A8402C7B0EB11BA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66685721CE8C04ACC6410B2ABE46563F /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		94BA7FC17BBADA63D6F4D76D13F860B5 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BEB12D31E9E5217CB596934569B099 /* NSCalendar+RSDFAdditions.m */; };
+		9B60A3F7EA094633D8AE153C611FAB6F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F357561D46BE47DAAAC73B11D5E1782E /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A2D93DC9BD23738FF01DC59200280372 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 628AEFEBE589BBC40709314F8958D867 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A793ECA977668D073CABEDC2BEDF75A5 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = B531333E532B08F76728A290E051544F /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B32EF67BEA420E54336E0AFCEB7DA287 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8018AA5C558AE20A7281223403302522 /* NSCalendar+RSDFAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B95FD73B93D9BFA3B1C36D8F230BAF8F /* RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2374E5B3D645647A54CFD028B3995 /* RSDayFlow-dummy.m */; };
+		BA13FB5C97E2B0F23AB265FA52621686 /* RSDFDatePickerView+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A10A10FE021492F0C74BCE36882565 /* RSDFDatePickerView+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C934E541F12D4948EF74926AC3DBC8BA /* RSDFDatePickerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA66BFA0327F389ED26658825393486 /* RSDFDatePickerDate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF3C42C8DDF68A1C107238AEBE01A6A2 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD4F6DEF9749DE8FBDA462A8D94B0C6 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E413014A305FADEBA8EEE75EF409112E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FBF1D66DE513E7ABEF369FE27A008C /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA58EEE4E5026EC687AE7806E60893C2 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC569AB276815A9FF514FDF19C45E8 /* RSDFDatePickerDayCell.m */; };
+		F8C302FB630DC79EF3F43A95EE5D4CCC /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FCAB3D3DE2D079B26C3DE34049DBC688 /* RSDFDatePickerDayCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEF010922603172A85D1301370D7EDC3 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 791715CFF04F7A2B8E8495C1BC71AE34 /* RSDFDatePickerMonthHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9321E050CA1206DC58ABA427D307D9B8 /* PBXContainerItemProxy */ = {
+		0392F4D0A292892ECD1177B1EBB78CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A4343BB118B0DADC4A3685ECB12E0E;
+			remoteInfo = RSDayFlow;
+		};
+		B8FA0D0C731C4CB6B97A2FCC0B9F6472 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -33,32 +58,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		0181A2ECCCDFA58A55D0FB02045E3C58 /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDaysOfWeekView.m; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		03828C957D8713567E96C8FD94A4FF20 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerView.m; path = RSDayFlow/RSDFDatePickerView.m; sourceTree = "<group>"; };
+		05FF2DC189285E1D915311F918C229E7 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07847B19723499FEA072D96839488117 /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionViewLayout.h; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		0DA66BFA0327F389ED26658825393486 /* RSDFDatePickerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDate.h; path = RSDayFlow/RSDFDatePickerDate.h; sourceTree = "<group>"; };
 		16CC71B85A8382CF9B1A30006BD39494 /* Pods-Training-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Training-acknowledgements.markdown"; sourceTree = "<group>"; };
-		16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Training.a"; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201188B986F804E965E046CB0F80698C /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		215C0207A85F124F92F451E23C8D69AE /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDaysOfWeekView.h; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		25696BCF8F48EB542C282380EEEA9B29 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionViewLayout.m; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		2DDB9F006B44208A2F2490BF5D89EE4E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3E11C679ADA736539829FDB7927EBB19 /* RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		40BEB12D31E9E5217CB596934569B099 /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+RSDFAdditions.m"; path = "RSDayFlow/NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		448F5C1DAAA29CF333180BA4CFAFBC57 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		4AD4F6DEF9749DE8FBDA462A8D94B0C6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4BAC976C135BBD9FE56B1F6B792B7ED9 /* libRSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRSDayFlow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2D07C0CE66C91930875C97ED390522 /* RSDFDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerView.h; path = RSDayFlow/RSDFDatePickerView.h; sourceTree = "<group>"; };
+		55A10A10FE021492F0C74BCE36882565 /* RSDFDatePickerView+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSDFDatePickerView+Protected.h"; path = "RSDayFlow/RSDFDatePickerView+Protected.h"; sourceTree = "<group>"; };
 		60FE8BCFF7861491C115C3CD5D049110 /* Pods-Training-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Training-dummy.m"; sourceTree = "<group>"; };
-		6F49E256F4DABA22A6C3B6A4473E8A11 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		628AEFEBE589BBC40709314F8958D867 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		66685721CE8C04ACC6410B2ABE46563F /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		67A79CF5F4AE0AD79A095BEF071C7D7A /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionView.h; path = RSDayFlow/RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		791715CFF04F7A2B8E8495C1BC71AE34 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerMonthHeader.m; path = RSDayFlow/RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		7AA2374E5B3D645647A54CFD028B3995 /* RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		8018AA5C558AE20A7281223403302522 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+RSDFAdditions.h"; path = "RSDayFlow/NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		8FCCF34F053645092FDA80A5D46DD741 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AB0B5C97B87A0ADCAB7B38EF4BB58B /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionView.m; path = RSDayFlow/RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
 		91B4DA3E65AE688745AE30B378608660 /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
-		92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99BDB5952C2F91ED692AFE4960ECA088 /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerMonthHeader.h; path = RSDayFlow/RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A02D380BCA0E990600CF86963615FD71 /* Pods-Training-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Training-acknowledgements.plist"; sourceTree = "<group>"; };
-		B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		A9201F73C3BC9A397449C186682550A4 /* RSDayFlow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDayFlow.h; path = RSDayFlow/RSDayFlow.h; sourceTree = "<group>"; };
+		AC1E1E9294BBEBC6213D806714AEBC32 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		B531333E532B08F76728A290E051544F /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		BB811863C56325BF1DCB740EFB5725F8 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		C38AD4B2699C22041A086DE5A3D8015F /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
-		C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		CAAC569AB276815A9FF514FDF19C45E8 /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDayCell.m; path = RSDayFlow/RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		D0FBF1D66DE513E7ABEF369FE27A008C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D2F6133A791F550507BFC61989CD4F72 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DB53BF908C03A17EC18A993F7E799FD0 /* RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSDayFlow.xcconfig; sourceTree = "<group>"; };
+		E119DF6C05C76F869FEE4338FEEA1B9B /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		EE2A3491F6602388019EC0316ACA5085 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		F357561D46BE47DAAAC73B11D5E1782E /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		FCAB3D3DE2D079B26C3DE34049DBC688 /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDayCell.h; path = RSDayFlow/RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72396340F3857EBE1799AEEE3BF33011 /* Frameworks */ = {
+		2403252A184E199027BA66EBB5213337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A290A9ACCA55E6BB8697CC4B1B2735 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,40 +128,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BA92083315427C27695A1E305525A18 /* FMDB */ = {
+		06984FC503AE6170AA1A4F56368BA4E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BD47F4415FE534B8495A748025B75DD /* standard */,
-				96FEF588B4F1FEA01C79674A6A69455F /* Support Files */,
+				E119DF6C05C76F869FEE4338FEEA1B9B /* FMDB.xcconfig */,
+				448F5C1DAAA29CF333180BA4CFAFBC57 /* FMDB-dummy.m */,
+				201188B986F804E965E046CB0F80698C /* FMDB-prefix.pch */,
 			);
-			name = FMDB;
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		06CD6027CEB3C32195F2D3ED2CAB4462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05FF2DC189285E1D915311F918C229E7 /* libFMDB.a */,
+				8FCCF34F053645092FDA80A5D46DD741 /* libPods-Training.a */,
+				4BAC976C135BBD9FE56B1F6B792B7ED9 /* libRSDayFlow.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F698047BCC8C44139EA4E993AE518E2 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				8018AA5C558AE20A7281223403302522 /* NSCalendar+RSDFAdditions.h */,
+				40BEB12D31E9E5217CB596934569B099 /* NSCalendar+RSDFAdditions.m */,
+				A9201F73C3BC9A397449C186682550A4 /* RSDayFlow.h */,
+				67A79CF5F4AE0AD79A095BEF071C7D7A /* RSDFDatePickerCollectionView.h */,
+				91AB0B5C97B87A0ADCAB7B38EF4BB58B /* RSDFDatePickerCollectionView.m */,
+				07847B19723499FEA072D96839488117 /* RSDFDatePickerCollectionViewLayout.h */,
+				25696BCF8F48EB542C282380EEEA9B29 /* RSDFDatePickerCollectionViewLayout.m */,
+				0DA66BFA0327F389ED26658825393486 /* RSDFDatePickerDate.h */,
+				FCAB3D3DE2D079B26C3DE34049DBC688 /* RSDFDatePickerDayCell.h */,
+				CAAC569AB276815A9FF514FDF19C45E8 /* RSDFDatePickerDayCell.m */,
+				215C0207A85F124F92F451E23C8D69AE /* RSDFDatePickerDaysOfWeekView.h */,
+				0181A2ECCCDFA58A55D0FB02045E3C58 /* RSDFDatePickerDaysOfWeekView.m */,
+				99BDB5952C2F91ED692AFE4960ECA088 /* RSDFDatePickerMonthHeader.h */,
+				791715CFF04F7A2B8E8495C1BC71AE34 /* RSDFDatePickerMonthHeader.m */,
+				4C2D07C0CE66C91930875C97ED390522 /* RSDFDatePickerView.h */,
+				03828C957D8713567E96C8FD94A4FF20 /* RSDFDatePickerView.m */,
+				55A10A10FE021492F0C74BCE36882565 /* RSDFDatePickerView+Protected.h */,
+				5F9F81AE3D9DD5A0651584D2BF443637 /* Support Files */,
+			);
+			path = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		43CCB89972ED7D80A1057CEEB61EA5E1 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				707B10B6B680A19D503FBCD9AEBDE9EF /* standard */,
+				06984FC503AE6170AA1A4F56368BA4E0 /* Support Files */,
+			);
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		5BD47F4415FE534B8495A748025B75DD /* standard */ = {
+		5F9F81AE3D9DD5A0651584D2BF443637 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7472174DAF6BBEF7F12750C6D7BEBBAF /* FMDatabase.h */,
-				11385C4381D0EF377777E47920CA49C4 /* FMDatabase.m */,
-				99F594A48CEFF6BC872630519AD75037 /* FMDatabaseAdditions.h */,
-				706B1585A191D56964C181DB9D35775D /* FMDatabaseAdditions.m */,
-				92DE83CFC4AD965441F9AF7CF161BCEA /* FMDatabasePool.h */,
-				BB94DB4323DD462EF1BD54A960C5F8F4 /* FMDatabasePool.m */,
-				55196B93CFC0389ED71EFE811A5E21A0 /* FMDatabaseQueue.h */,
-				B77BCD5A4D892DFD64B2EED65D5AD70F /* FMDatabaseQueue.m */,
-				CED1A9E0311E260A3634D3A9D0C0550D /* FMDB.h */,
-				04B39DCD8C0CC1DBBC41AEB2315AFD00 /* FMResultSet.h */,
-				C5F5E3F0C11B2E863E9B4567F958FE7C /* FMResultSet.m */,
+				DB53BF908C03A17EC18A993F7E799FD0 /* RSDayFlow.xcconfig */,
+				7AA2374E5B3D645647A54CFD028B3995 /* RSDayFlow-dummy.m */,
+				3E11C679ADA736539829FDB7927EBB19 /* RSDayFlow-prefix.pch */,
 			);
-			name = standard;
+			name = "Support Files";
+			path = "../Target Support Files/RSDayFlow";
 			sourceTree = "<group>";
 		};
-		68DB21AE5492FC581291330CF6E902BA /* Pods */ = {
+		707B10B6B680A19D503FBCD9AEBDE9EF /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				2BA92083315427C27695A1E305525A18 /* FMDB */,
+				EE2A3491F6602388019EC0316ACA5085 /* FMDatabase.h */,
+				66685721CE8C04ACC6410B2ABE46563F /* FMDatabase.m */,
+				4AD4F6DEF9749DE8FBDA462A8D94B0C6 /* FMDatabaseAdditions.h */,
+				D2F6133A791F550507BFC61989CD4F72 /* FMDatabaseAdditions.m */,
+				B531333E532B08F76728A290E051544F /* FMDatabasePool.h */,
+				F357561D46BE47DAAAC73B11D5E1782E /* FMDatabasePool.m */,
+				2DDB9F006B44208A2F2490BF5D89EE4E /* FMDatabaseQueue.h */,
+				D0FBF1D66DE513E7ABEF369FE27A008C /* FMDatabaseQueue.m */,
+				AC1E1E9294BBEBC6213D806714AEBC32 /* FMDB.h */,
+				628AEFEBE589BBC40709314F8958D867 /* FMResultSet.h */,
+				BB811863C56325BF1DCB740EFB5725F8 /* FMResultSet.m */,
 			);
-			name = Pods;
+			name = standard;
 			sourceTree = "<group>";
 		};
 		78A0A6C8010F837E1F44722A95A1854A /* Pods-Training */ = {
@@ -124,15 +225,13 @@
 			path = "Target Support Files/Pods-Training";
 			sourceTree = "<group>";
 		};
-		96FEF588B4F1FEA01C79674A6A69455F /* Support Files */ = {
+		CB3176B5E4C335676D02FE5728977C13 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */,
-				16FDD108B94D2571106CB9E68721D76F /* FMDB-dummy.m */,
-				6F49E256F4DABA22A6C3B6A4473E8A11 /* FMDB-prefix.pch */,
+				43CCB89972ED7D80A1057CEEB61EA5E1 /* FMDB */,
+				0F698047BCC8C44139EA4E993AE518E2 /* RSDayFlow */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FMDB";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -140,8 +239,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				68DB21AE5492FC581291330CF6E902BA /* Pods */,
-				F572EF8FB1B4E537031CA84643FB2164 /* Products */,
+				CB3176B5E4C335676D02FE5728977C13 /* Pods */,
+				06CD6027CEB3C32195F2D3ED2CAB4462 /* Products */,
 				E087CEE0BB2358DB65233D2969CE9065 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -161,15 +260,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F572EF8FB1B4E537031CA84643FB2164 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */,
-				5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -186,10 +276,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		634E064ECEF7A0D80EA3B4F793929157 /* Headers */ = {
+		173F97D0B726C7EDDF0C74863C5651B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3C77B9657A3D17436D55AE4BA62698 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32EF67BEA420E54336E0AFCEB7DA287 /* NSCalendar+RSDFAdditions.h in Headers */,
+				4D2B50D2010FB00D507CAF1684CF1404 /* RSDayFlow.h in Headers */,
+				393D1F135AF85EF29CCF97F605C4FB5E /* RSDFDatePickerCollectionView.h in Headers */,
+				5B6E77FBCE7B534228AD8AE5687FA930 /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				C934E541F12D4948EF74926AC3DBC8BA /* RSDFDatePickerDate.h in Headers */,
+				F8C302FB630DC79EF3F43A95EE5D4CCC /* RSDFDatePickerDayCell.h in Headers */,
+				39552AF1E4AD22555D71314B734060F4 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				3DD536051E4A24DD3B27D3056BFDDE6D /* RSDFDatePickerMonthHeader.h in Headers */,
+				BA13FB5C97E2B0F23AB265FA52621686 /* RSDFDatePickerView+Protected.h in Headers */,
+				6C7ED7729736832D4D3CE6C979D8BF25 /* RSDFDatePickerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,25 +317,43 @@
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = 9C0DD24E8B591EA79CB30D964EB6F8A8 /* libFMDB.a */;
+			productReference = 05FF2DC189285E1D915311F918C229E7 /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1D87D796D18425F4AB451350C16124CF /* Pods-Training */ = {
+		70A4343BB118B0DADC4A3685ECB12E0E /* RSDayFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 945E445EA60EAA7F5A2C3B5E9547CB4C /* Build configuration list for PBXNativeTarget "Pods-Training" */;
+			buildConfigurationList = 221596613541846FB7E0DA2860DD03D4 /* Build configuration list for PBXNativeTarget "RSDayFlow" */;
 			buildPhases = (
-				634E064ECEF7A0D80EA3B4F793929157 /* Headers */,
-				B310ED911EDE336E7EFC8F32D504194F /* Sources */,
-				72396340F3857EBE1799AEEE3BF33011 /* Frameworks */,
+				FE3C77B9657A3D17436D55AE4BA62698 /* Headers */,
+				5EBF53183159E128B8A5EC0B561C372F /* Sources */,
+				C0A290A9ACCA55E6BB8697CC4B1B2735 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C08B5F10C27D5DDAB6FB5A0772019C39 /* PBXTargetDependency */,
+			);
+			name = RSDayFlow;
+			productName = RSDayFlow;
+			productReference = 4BAC976C135BBD9FE56B1F6B792B7ED9 /* libRSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8F0B742F80878151A0C616EE285AD63A /* Pods-Training */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF59265D02AE6B9046FA57A59FB021B7 /* Build configuration list for PBXNativeTarget "Pods-Training" */;
+			buildPhases = (
+				173F97D0B726C7EDDF0C74863C5651B9 /* Headers */,
+				55F71FE85D46F19FA16C14539253703E /* Sources */,
+				2403252A184E199027BA66EBB5213337 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EA8E270B4AAA9C49047E5D55CFBD1CF /* PBXTargetDependency */,
+				F5B77A7F4A018264153F2C775C764825 /* PBXTargetDependency */,
 			);
 			name = "Pods-Training";
 			productName = "Pods-Training";
-			productReference = 5537F6C0BEEADF7FC382EEDF4D2C4234 /* libPods-Training.a */;
+			productReference = 8FCCF34F053645092FDA80A5D46DD741 /* libPods-Training.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +363,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -248,17 +373,41 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F572EF8FB1B4E537031CA84643FB2164 /* Products */;
+			productRefGroup = 06CD6027CEB3C32195F2D3ED2CAB4462 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1CC1E04196D9674880859F4086A7DCCE /* FMDB */,
-				1D87D796D18425F4AB451350C16124CF /* Pods-Training */,
+				8F0B742F80878151A0C616EE285AD63A /* Pods-Training */,
+				70A4343BB118B0DADC4A3685ECB12E0E /* RSDayFlow */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55F71FE85D46F19FA16C14539253703E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AE7760AE03166170029A1D24D5458D /* Pods-Training-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBF53183159E128B8A5EC0B561C372F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94BA7FC17BBADA63D6F4D76D13F860B5 /* NSCalendar+RSDFAdditions.m in Sources */,
+				B95FD73B93D9BFA3B1C36D8F230BAF8F /* RSDayFlow-dummy.m in Sources */,
+				3165CA063C6A3201B8148BC2D3FC81F4 /* RSDFDatePickerCollectionView.m in Sources */,
+				634571241389D0483D2BFA3EF5BC0E7A /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				EA58EEE4E5026EC687AE7806E60893C2 /* RSDFDatePickerDayCell.m in Sources */,
+				63E5A657D44A810099054BCD61A2055F /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				FEF010922603172A85D1301370D7EDC3 /* RSDFDatePickerMonthHeader.m in Sources */,
+				07099BF93A1201E7D22DFABC29E42E62 /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79E9EF726F1A91A19D785F49376CB25C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,27 +421,96 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B310ED911EDE336E7EFC8F32D504194F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA3E567B61D587198A974178EBC18C69 /* Pods-Training-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C08B5F10C27D5DDAB6FB5A0772019C39 /* PBXTargetDependency */ = {
+		0EA8E270B4AAA9C49047E5D55CFBD1CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FMDB;
 			target = 1CC1E04196D9674880859F4086A7DCCE /* FMDB */;
-			targetProxy = 9321E050CA1206DC58ABA427D307D9B8 /* PBXContainerItemProxy */;
+			targetProxy = B8FA0D0C731C4CB6B97A2FCC0B9F6472 /* PBXContainerItemProxy */;
+		};
+		F5B77A7F4A018264153F2C775C764825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDayFlow;
+			target = 70A4343BB118B0DADC4A3685ECB12E0E /* RSDayFlow */;
+			targetProxy = 0392F4D0A292892ECD1177B1EBB78CBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0707F5734309E4EF354EA19D1A246AA5 /* Release */ = {
+		29044349A512E2C7AE396890752FA1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E119DF6C05C76F869FEE4338FEEA1B9B /* FMDB.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		359F118F34446187D54A431ADE02B6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB53BF908C03A17EC18A993F7E799FD0 /* RSDayFlow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSDayFlow/RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSDayFlow;
+				PRODUCT_NAME = RSDayFlow;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D0278B2C6A0284262EC5F679F8B3D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB53BF908C03A17EC18A993F7E799FD0 /* RSDayFlow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSDayFlow/RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSDayFlow;
+				PRODUCT_NAME = RSDayFlow;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41D6DDB76D683B210C9F16C848345D1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C38AD4B2699C22041A086DE5A3D8015F /* Pods-Training.release.xcconfig */;
 			buildSettings = {
@@ -315,31 +533,7 @@
 			};
 			name = Release;
 		};
-		29044349A512E2C7AE396890752FA1FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FMDB;
-				PRODUCT_NAME = FMDB;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		701ECF1A669114B44E68D1853E492C82 /* Debug */ = {
+		7821CBAB03A3FC753CF87D2E43E9748B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91B4DA3E65AE688745AE30B378608660 /* Pods-Training.debug.xcconfig */;
 			buildSettings = {
@@ -487,7 +681,7 @@
 		};
 		FB3BF70CC474E51618A50C42F086EEAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A72F16B0B2166E4AA8080B7F6AD6BC /* FMDB.xcconfig */;
+			baseConfigurationReference = E119DF6C05C76F869FEE4338FEEA1B9B /* FMDB.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -495,7 +689,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -513,6 +707,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		221596613541846FB7E0DA2860DD03D4 /* Build configuration list for PBXNativeTarget "RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359F118F34446187D54A431ADE02B6D8 /* Debug */,
+				3D0278B2C6A0284262EC5F679F8B3D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -531,11 +734,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		945E445EA60EAA7F5A2C3B5E9547CB4C /* Build configuration list for PBXNativeTarget "Pods-Training" */ = {
+		EF59265D02AE6B9046FA57A59FB021B7 /* Build configuration list for PBXNativeTarget "Pods-Training" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				701ECF1A669114B44E68D1853E492C82 /* Debug */,
-				0707F5734309E4EF354EA19D1A246AA5 /* Release */,
+				7821CBAB03A3FC753CF87D2E43E9748B /* Debug */,
+				41D6DDB76D683B210C9F16C848345D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

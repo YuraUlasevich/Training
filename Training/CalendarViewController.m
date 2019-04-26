@@ -7,8 +7,11 @@
 //
 
 #import "CalendarViewController.h"
+#import "MainWindowViewController.h"
 
-@interface CalendarViewController ()
+#import <FMDB.h>
+
+@interface CalendarViewController () <RSDFDatePickerViewDelegate>
 
 @end
 
@@ -21,7 +24,67 @@
     UITapGestureRecognizer *tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideSidePanel:)];
     tapper.numberOfTapsRequired = 1;
     [transV addGestureRecognizer:tapper];
+    
+    RSDFDatePickerView *datePickerView = [[RSDFDatePickerView alloc] initWithFrame:self.view.bounds];
+    datePickerView.delegate = self;
+    datePickerView.dataSource = self;
+    [self.contentView addSubview:datePickerView];
 }
+
+// Returns YES if the date should be highlighted or NO if it should not.
+- (BOOL)datePickerView:(RSDFDatePickerView *)view shouldHighlightDate:(NSDate *)date
+{
+    return YES;
+}
+
+// Returns YES if the date should be selected or NO if it should not.
+- (BOOL)datePickerView:(RSDFDatePickerView *)view shouldSelectDate:(NSDate *)date
+{
+    return YES;
+}
+
+// Prints out the selected date.
+- (void)datePickerView:(RSDFDatePickerView *)view didSelectDate:(NSDate *)date
+{
+    NSLog(@"%@", [date description]);
+}
+
+
+// Returns YES if the date should be marked or NO if it should not.
+- (BOOL)datePickerView:(RSDFDatePickerView *)view shouldMarkDate:(NSDate *)date
+{
+    // The date is an `NSDate` object without time components.
+    // So, we need to use dates without time components.
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    NSDateComponents *todayComponents = [calendar components:unitFlags fromDate:[NSDate date]];
+    NSDate *today = [calendar dateFromComponents:todayComponents];
+    
+    return [date isEqual:today];
+}
+
+// Returns the color of the default mark image for the specified date.
+- (UIColor *)datePickerView:(RSDFDatePickerView *)view markImageColorForDate:(NSDate *)date
+{
+    if (arc4random() % 2 == 0) {
+        return [UIColor grayColor];
+    } else {
+        return [UIColor greenColor];
+    }
+}
+
+// Returns the mark image for the specified date.
+- (UIImage *)datePickerView:(RSDFDatePickerView *)view markImageForDate:(NSDate *)date
+{
+    if (arc4random() % 2 == 0) {
+        return [UIImage imageNamed:@"img_gray_mark"];
+    } else {
+        return [UIImage imageNamed:@"img_green_mark"];
+    }
+}
+
+
 
 -(void) hideSidePanel:(UIGestureRecognizer *)gesture{
     if(gesture.state == UIGestureRecognizerStateEnded){
@@ -96,5 +159,6 @@
     CalendarViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
+
 
 @end

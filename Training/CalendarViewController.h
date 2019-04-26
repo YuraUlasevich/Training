@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSDFDatePickerView.h"
 
 
 @interface CalendarViewController : UIViewController{
     IBOutlet UIView *transV;
     IBOutlet UIView *sidePanel;
     IBOutlet UIButton *menuBtn;
+    IBOutlet UIView *mainView;
+    IBOutlet UIView *contentView;
+    
 }
 - (IBAction)mainBtnPressed:(UIButton *)sender;
 - (IBAction)aboutMeBtnPressed:(UIButton *)sender;
@@ -20,9 +24,12 @@
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender;
 - (IBAction)trainingsBtnPressed:(UIButton *)sender;
 
+
 @property(nonatomic) UIView *transV;
 @property(nonatomic) UIView *sidePanel;
 @property(nonatomic) UIButton *menuBtn;
+@property(nonatomic) UIView *mainView;
+@property(nonatomic) UIView *contentView;
 @property int count;
 @end
 

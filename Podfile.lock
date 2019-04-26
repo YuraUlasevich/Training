@@ -2,17 +2,21 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - RSDayFlow (1.7.1)
 
 DEPENDENCIES:
   - FMDB
+  - RSDayFlow
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
+    - RSDayFlow
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  RSDayFlow: c4d27ab9d40773bdd53ace3a5accb807c070d4bf
 
-PODFILE CHECKSUM: b5df7cdd930e8f59b6b075359072da46582f3439
+PODFILE CHECKSUM: bcd227e8a7b62f417ba884e683371cd9f180c39b
 
 COCOAPODS: 1.6.1

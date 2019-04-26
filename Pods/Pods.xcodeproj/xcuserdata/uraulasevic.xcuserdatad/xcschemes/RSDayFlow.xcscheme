@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1CC1E04196D9674880859F4086A7DCCE"
-               BuildableName = "libFMDB.a"
-               BlueprintName = "FMDB"
+               BlueprintIdentifier = "70A4343BB118B0DADC4A3685ECB12E0E"
+               BuildableName = "libRSDayFlow.a"
+               BlueprintName = "RSDayFlow"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1CC1E04196D9674880859F4086A7DCCE"
-            BuildableName = "libFMDB.a"
-            BlueprintName = "FMDB"
+            BlueprintIdentifier = "70A4343BB118B0DADC4A3685ECB12E0E"
+            BuildableName = "libRSDayFlow.a"
+            BlueprintName = "RSDayFlow"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
