@@ -21,6 +21,7 @@
 		347EDC8D226CEC9D001533ED /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC8C226CEC9D001533ED /* AboutMeViewController.m */; };
 		347EDC9C226CEE19001533ED /* MyTrainingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */; };
 		347EDC9F226CEE37001533ED /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EDC9E226CEE37001533ED /* CalendarViewController.m */; };
+		348986CF227618E300556321 /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348986CE227618E300556321 /* ChangeViewController.m */; };
 		3496328522665A1F0055C2B8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */; };
 		349632922267747A0055C2B8 /* my.db in Resources */ = {isa = PBXBuildFile; fileRef = 34963291226774790055C2B8 /* my.db */; };
 		34C393C12270C10E009BB0DC /* TrainersTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */; };
@@ -56,6 +57,8 @@
 		347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTrainingsViewController.m; sourceTree = "<group>"; };
 		347EDC9D226CEE37001533ED /* CalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		347EDC9E226CEE37001533ED /* CalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		348986CD227618E300556321 /* ChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeViewController.h; sourceTree = "<group>"; };
+		348986CE227618E300556321 /* ChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeViewController.m; sourceTree = "<group>"; };
 		34923427226857BB00D20897 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		34963291226774790055C2B8 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
@@ -138,6 +141,8 @@
 				347EDC9E226CEE37001533ED /* CalendarViewController.m */,
 				347EDC8B226CEC9D001533ED /* AboutMeViewController.h */,
 				347EDC8C226CEC9D001533ED /* AboutMeViewController.m */,
+				348986CD227618E300556321 /* ChangeViewController.h */,
+				348986CE227618E300556321 /* ChangeViewController.m */,
 				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,
 				3463796F22587E5900D3A36E /* RegisterController.h */,
 				34963291226774790055C2B8 /* my.db */,
@@ -283,6 +288,7 @@
 				3474E48D226D06F00022C7D5 /* TrainingsViewController.m in Sources */,
 				34CA6F4E2255CBDC0078C67A /* main.m in Sources */,
 				343FC3C9225CA08B0007AE47 /* MainWindowViewController.m in Sources */,
+				348986CF227618E300556321 /* ChangeViewController.m in Sources */,
 				347EDC8D226CEC9D001533ED /* AboutMeViewController.m in Sources */,
 				347EDC9C226CEE19001533ED /* MyTrainingsViewController.m in Sources */,
 				34C393C12270C10E009BB0DC /* TrainersTableTableViewController.m in Sources */,

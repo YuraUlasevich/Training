@@ -19,7 +19,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     UITapGestureRecognizer * handledTap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(handleEndEditing)];
     [self.view addGestureRecognizer:handledTap];
+    
+    
     [self loadItems];
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
+}
+
+-(void)didSwipe:(UISwipeGestureRecognizer*) swipe{
+    if(swipe.direction == UISwipeGestureRecognizerDirectionRight){
+    }
 }
 
 - (void) handleEndEditing{

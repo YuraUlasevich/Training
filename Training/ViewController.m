@@ -21,6 +21,11 @@
     UITapGestureRecognizer * handledTap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(handleEndEditing)];
     [self.view addGestureRecognizer:handledTap];
     _loginItems = [[NSMutableArray alloc] init];
+    _fNItems = [[NSMutableArray alloc] init];
+    _sNItems = [[NSMutableArray alloc] init];
+    _emItems = [[NSMutableArray alloc] init];
+    _heItems = [[NSMutableArray alloc] init];
+    _weItems = [[NSMutableArray alloc] init];
     _passwordItems = [[NSMutableArray alloc] init];
     [self loadItems];
 }
@@ -39,9 +44,19 @@
     while([_results next]) {
         NSString *login = [_results stringForColumn:@"login"];
         NSString *password = [_results stringForColumn:@"password"];
+        NSString *fN = [_results stringForColumn:@"firstname"];
+        NSString *sN = [_results stringForColumn:@"second_name"];
+        NSString *em = [_results stringForColumn:@"email"];
+        NSString *he = [_results stringForColumn:@"height"];
+        NSString *we = [_results stringForColumn:@"weight"];
         //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
         [_loginItems insertObject:login atIndex:[_loginItems count]];
         [_passwordItems insertObject:password atIndex:[_passwordItems count]];
+        [_fNItems insertObject:fN atIndex:[_fNItems count]];
+        [_sNItems insertObject:sN atIndex:[_sNItems count]];
+        [_emItems insertObject:em atIndex:[_emItems count]];
+        [_heItems insertObject:he atIndex:[_heItems count]];
+        [_weItems insertObject:we atIndex:[_weItems count]];
     }
     
     //удаляем подключение к базе
@@ -69,9 +84,23 @@
         _passwordTextField.layer.borderWidth = 3.0f;
     }
     if(flag){
+        NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
+        NSString* result = [userDefault objectForKey:@"login"];
+        if ([result length]) {
+            NSLog(@"login = %@", [userDefault objectForKey:@"login"]);
+            NSLog(@"password = %@", [userDefault objectForKey:@"login"]);
+        } else {
+            NSLog(@"Add values to UserDefaults");
+            [userDefault setObject:_loginTextField.text forKey:@"login"];
+            [userDefault setObject:_passwordTextField.text forKey:@"password"];
+            [userDefault synchronize];
+        }
+        NSLog(@"%@", [userDefault objectForKey:@"login"]);
+        NSLog(@"%@", [userDefault objectForKey:@"password"]);
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
         MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
         [self presentViewController:myVC animated:YES completion:nil];
+        
     }
 }
 

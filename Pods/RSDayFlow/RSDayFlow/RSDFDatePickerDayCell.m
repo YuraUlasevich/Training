@@ -382,7 +382,7 @@ CGFloat roundOnBase(CGFloat x, CGFloat base) {
 
 - (UIColor *)todayLabelTextColor
 {
-    return [UIColor colorWithRed:0/255.0f green:121/255.0f blue:255/255.0f alpha:1.0f];
+    return [UIColor colorWithRed:126/255.0f green:104/255.0f blue:250/255.0f alpha:1.0f];
 }
 
 - (UIFont *)selectedTodayLabelFont
@@ -397,7 +397,7 @@ CGFloat roundOnBase(CGFloat x, CGFloat base) {
 
 - (UIColor *)selectedTodayImageColor
 {
-    return [UIColor colorWithRed:0/255.0f green:121/255.0f blue:255/255.0f alpha:1.0f];
+    return [UIColor colorWithRed:126/255.0f green:104/255.0f blue:255/255.0f alpha:1.0f];
 }
 
 - (UIImage *)customSelectedTodayImage
@@ -428,7 +428,7 @@ CGFloat roundOnBase(CGFloat x, CGFloat base) {
 
 - (UIColor *)selectedDayImageColor
 {
-    return [UIColor colorWithRed:255/255.0f green:59/255.0f blue:48/255.0f alpha:1.0f];
+    return [UIColor colorWithRed:126/255.0f green:104/255.0f blue:255/255.0f alpha:1.0f];
 }
 
 - (UIImage *)customSelectedDayImage
@@ -449,7 +449,7 @@ CGFloat roundOnBase(CGFloat x, CGFloat base) {
 
 - (UIColor *)overlayImageColor
 {
-    return [UIColor colorWithRed:184/255.0f green:184/255.0f blue:184/255.0f alpha:1.0f];
+    return [UIColor colorWithRed:126/255.0f green:104/255.0f blue:255/255.0f alpha:1.0f];
 }
 
 - (UIImage *)customOverlayImage

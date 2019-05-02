@@ -14,14 +14,63 @@
 @end
 
 @implementation AboutMeViewController
-@synthesize transV, sidePanel, menuBtn;
+@synthesize transV, sidePanel, menuBtn, contentView;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     UITapGestureRecognizer *tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideSidePanel:)];
     tapper.numberOfTapsRequired = 1;
     [transV addGestureRecognizer:tapper];
+    [self loadItems];
 }
+
+- (void)loadItems
+{
+    
+    
+    _userDefault = [NSUserDefaults standardUserDefaults];
+    NSString* result = [_userDefault objectForKey:@"login"];
+    if ([result length]) {
+        _userLogin = [_userDefault objectForKey:@"login"];
+    } else {
+        NSLog(@"Problems");
+    }
+    
+    //определяем путь к файлу с базой
+    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
+    //создаем подключение к базе
+    FMDatabase *database;
+    database = [FMDatabase databaseWithPath:databasePath];
+    database.traceExecution = false; //выводит подробный лог запросов в консоль
+    [database open];
+    
+    
+    
+    
+    NSString* testStr=[NSString stringWithFormat:@"select firstname, second_name, email, height, weight from client where login = '%@'", _userLogin];
+    
+    //выполняем выборку из таблицы client
+    _results = [database executeQuery:testStr];
+    while([_results next]) {
+        _userFN = [_results stringForColumn:@"firstname"];
+        _userSN = [_results stringForColumn:@"second_name"];
+        _userEmail = [_results stringForColumn:@"email"];
+        _userHeight = [_results stringForColumn:@"height"];
+        _userWeight = [_results stringForColumn:@"weight"];
+    }
+    [database close];
+    
+    firstName.text = _userFN;
+    secondName.text = _userSN;
+    email.text = _userEmail;
+    login.text = _userLogin;
+    height.text = _userHeight;
+    weight.text = _userWeight;
+}
+
 
 /*
 #pragma mark - Navigation
@@ -94,4 +143,6 @@
     AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
+
+
 @end

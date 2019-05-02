@@ -13,7 +13,12 @@
 
 @interface ViewController : UIViewController{
     NSMutableArray *_loginItems;
+    NSMutableArray *_fNItems;
+    NSMutableArray *_sNItems;
+    NSMutableArray *_emItems;
+    NSMutableArray *_heItems;
     NSMutableArray *_passwordItems;
+    NSMutableArray *_weItems;
     FMResultSet *_results;
 }
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
