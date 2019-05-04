@@ -94,7 +94,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="calendarBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="2NN-Pr-WuE"/>
                                             <action selector="trainingsBtnPressed:" destination="Vmh-tq-zj5" eventType="touchUpInside" id="JMs-Kz-PN8"/>
                                         </connections>
                                     </button>

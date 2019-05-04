@@ -33,7 +33,6 @@
 		34CA6F482255CBDC0078C67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F472255CBDC0078C67A /* Assets.xcassets */; };
 		34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */; };
 		34CA6F4E2255CBDC0078C67A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F4D2255CBDC0078C67A /* main.m */; };
-		34CA6F5622571A250078C67A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CA6F5522571A250078C67A /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,8 +76,6 @@
 		34CA6F4A2255CBDC0078C67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CA6F4C2255CBDC0078C67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34CA6F4D2255CBDC0078C67A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34CA6F5422571A250078C67A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		34CA6F5522571A250078C67A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		B82A489F434BD65212DC984D /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		FDE1C5FE894198267F0B9804 /* libPods-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +94,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344081FF227E2C79005BE525 /* Start app */ = {
+			isa = PBXGroup;
+			children = (
+				3463797022587E5900D3A36E /* RegisterController.m */,
+				3463796F22587E5900D3A36E /* RegisterController.h */,
+				34CA6F422255CBDA0078C67A /* ViewController.m */,
+				34CA6F412255CBDA0078C67A /* ViewController.h */,
+				34CA6F442255CBDA0078C67A /* Main.storyboard */,
+			);
+			path = "Start app";
+			sourceTree = "<group>";
+		};
+		34408200227E2CDB005BE525 /* Main window */ = {
+			isa = PBXGroup;
+			children = (
+				343FC3CA225CA6D70007AE47 /* Second.storyboard */,
+				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,
+				343FC3C7225CA08B0007AE47 /* MainWindowViewController.h */,
+			);
+			path = "Main window";
+			sourceTree = "<group>";
+		};
+		34408201227E2D39005BE525 /* About me window */ = {
+			isa = PBXGroup;
+			children = (
+				348986CE227618E300556321 /* ChangeViewController.m */,
+				348986CD227618E300556321 /* ChangeViewController.h */,
+				347EDC81226CEAFE001533ED /* AboutMe.storyboard */,
+				347EDC8C226CEC9D001533ED /* AboutMeViewController.m */,
+				347EDC8B226CEC9D001533ED /* AboutMeViewController.h */,
+			);
+			path = "About me window";
+			sourceTree = "<group>";
+		};
+		34408202227E2D68005BE525 /* Calendar window */ = {
+			isa = PBXGroup;
+			children = (
+				347EDC87226CEB68001533ED /* Calendar.storyboard */,
+				347EDC9E226CEE37001533ED /* CalendarViewController.m */,
+				347EDC9D226CEE37001533ED /* CalendarViewController.h */,
+			);
+			path = "Calendar window";
+			sourceTree = "<group>";
+		};
+		34408203227E2DA2005BE525 /* Trainers window */ = {
+			isa = PBXGroup;
+			children = (
+				34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */,
+				34C393BF2270C10E009BB0DC /* TrainersTableTableViewController.h */,
+				347EDC83226CEB12001533ED /* Trainers.storyboard */,
+			);
+			path = "Trainers window";
+			sourceTree = "<group>";
+		};
+		34408204227E2DC0005BE525 /* Trainings window */ = {
+			isa = PBXGroup;
+			children = (
+				3474E48C226D06F00022C7D5 /* TrainingsViewController.m */,
+				3474E48B226D06F00022C7D5 /* TrainingsViewController.h */,
+				347EDC89226CEB7E001533ED /* Trainings.storyboard */,
+			);
+			path = "Trainings window";
+			sourceTree = "<group>";
+		};
+		34408205227E2E0A005BE525 /* My Tainings window */ = {
+			isa = PBXGroup;
+			children = (
+				347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */,
+				347EDC9A226CEE19001533ED /* MyTrainingsViewController.h */,
+				347EDC85226CEB41001533ED /* MyTrainings.storyboard */,
+			);
+			path = "My Tainings window";
+			sourceTree = "<group>";
+		};
 		34593D3522664D2600CC2A43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,44 +199,24 @@
 		34CA6F3D2255CBDA0078C67A /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				34408205227E2E0A005BE525 /* My Tainings window */,
+				34408204227E2DC0005BE525 /* Trainings window */,
+				34408203227E2DA2005BE525 /* Trainers window */,
+				34408202227E2D68005BE525 /* Calendar window */,
+				34408201227E2D39005BE525 /* About me window */,
+				34408200227E2CDB005BE525 /* Main window */,
+				344081FF227E2C79005BE525 /* Start app */,
 				34CA6F3E2255CBDA0078C67A /* AppDelegate.h */,
 				34CA6F3F2255CBDA0078C67A /* AppDelegate.m */,
-				34CA6F412255CBDA0078C67A /* ViewController.h */,
-				34CA6F422255CBDA0078C67A /* ViewController.m */,
 				34923427226857BB00D20897 /* my.db */,
-				34CA6F442255CBDA0078C67A /* Main.storyboard */,
-				343FC3C7225CA08B0007AE47 /* MainWindowViewController.h */,
-				347EDC9A226CEE19001533ED /* MyTrainingsViewController.h */,
-				347EDC9B226CEE19001533ED /* MyTrainingsViewController.m */,
-				347EDC9D226CEE37001533ED /* CalendarViewController.h */,
-				347EDC9E226CEE37001533ED /* CalendarViewController.m */,
-				347EDC8B226CEC9D001533ED /* AboutMeViewController.h */,
-				347EDC8C226CEC9D001533ED /* AboutMeViewController.m */,
-				348986CD227618E300556321 /* ChangeViewController.h */,
-				348986CE227618E300556321 /* ChangeViewController.m */,
-				343FC3C8225CA08B0007AE47 /* MainWindowViewController.m */,
-				3463796F22587E5900D3A36E /* RegisterController.h */,
 				34963291226774790055C2B8 /* my.db */,
-				3463797022587E5900D3A36E /* RegisterController.m */,
 				34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */,
 				34C393C72270CFE1009BB0DC /* UIScrollView+FloatingButton.h */,
-				347EDC81226CEAFE001533ED /* AboutMe.storyboard */,
-				347EDC83226CEB12001533ED /* Trainers.storyboard */,
-				34C393BF2270C10E009BB0DC /* TrainersTableTableViewController.h */,
-				34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */,
 				34C393CA2270D3D9009BB0DC /* image0.png */,
-				347EDC85226CEB41001533ED /* MyTrainings.storyboard */,
-				347EDC87226CEB68001533ED /* Calendar.storyboard */,
-				347EDC89226CEB7E001533ED /* Trainings.storyboard */,
-				343FC3CA225CA6D70007AE47 /* Second.storyboard */,
-				3474E48B226D06F00022C7D5 /* TrainingsViewController.h */,
-				3474E48C226D06F00022C7D5 /* TrainingsViewController.m */,
 				34CA6F472255CBDC0078C67A /* Assets.xcassets */,
 				34CA6F492255CBDC0078C67A /* LaunchScreen.storyboard */,
 				34CA6F4C2255CBDC0078C67A /* Info.plist */,
 				34CA6F4D2255CBDC0078C67A /* main.m */,
-				34CA6F5422571A250078C67A /* User.h */,
-				34CA6F5522571A250078C67A /* User.m */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -283,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34CA6F5622571A250078C67A /* User.m in Sources */,
 				34CA6F432255CBDA0078C67A /* ViewController.m in Sources */,
 				3474E48D226D06F00022C7D5 /* TrainingsViewController.m in Sources */,
 				34CA6F4E2255CBDC0078C67A /* main.m in Sources */,

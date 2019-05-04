@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "User.h"
 #import "MainWindowViewController.h"
 #import <FMDB.h>
 
