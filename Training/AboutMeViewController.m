@@ -29,8 +29,6 @@
 
 - (void)loadItems
 {
-    
-    
     _userDefault = [NSUserDefaults standardUserDefaults];
     NSString* result = [_userDefault objectForKey:@"login"];
     if ([result length]) {
@@ -46,9 +44,6 @@
     database = [FMDatabase databaseWithPath:databasePath];
     database.traceExecution = false; //выводит подробный лог запросов в консоль
     [database open];
-    
-    
-    
     
     NSString* testStr=[NSString stringWithFormat:@"select firstname, second_name, email, height, weight from client where login = '%@'", _userLogin];
     
@@ -143,6 +138,13 @@
     AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
+
+- (IBAction)chaingeBtnPressed:(UIButton *)sender {
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"AboutMe" bundle:nil];
+    AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"ChangeViewController"];
+    [self presentViewController:myVC animated:YES completion:nil];
+}
+
 
 
 @end

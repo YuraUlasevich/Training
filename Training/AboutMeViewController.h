@@ -21,7 +21,6 @@
     IBOutlet UILabel *height;
     IBOutlet UILabel *weight;
     
-    
     NSMutableArray* _firstNameItems;
     NSMutableArray* _secondNameItems;
     NSMutableArray* _emailItems;
@@ -31,8 +30,6 @@
     
     FMResultSet *_results;
     NSUserDefaults* _userDefault;
-    
-    
     
     NSString* _userFN;
     NSString* _userSN;
@@ -48,6 +45,8 @@
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender;
 - (IBAction)calendarBtnPressed:(UIButton *)sender;
 - (IBAction)trainingsBtnPressed:(UIButton *)sender;
+- (IBAction)chaingeBtnPressed:(UIButton *)sender;
+
 
 @property(nonatomic) UIView *transV;
 @property(nonatomic) UIView *sidePanel;

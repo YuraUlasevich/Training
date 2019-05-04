@@ -7,11 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FMDB.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface ChangeViewController : UIViewController
+@interface ChangeViewController : UIViewController{
+    NSUserDefaults* _userDefault;
+    NSString* _userLogin;
+}
+@property (strong, nonatomic) IBOutlet UITextField *changeFN;
+@property (strong, nonatomic) IBOutlet UITextField *changeSN;
+@property (strong, nonatomic) IBOutlet UITextField *changeEM;
+@property (strong, nonatomic) IBOutlet UITextField *changeH;
+@property (strong, nonatomic) IBOutlet UITextField *changeW;
+@property (strong, nonatomic) IBOutlet UITextField *changePSWD;
+@property (strong, nonatomic) IBOutlet UITextField *changePSWDConf;
+
+- (IBAction)changeBtnPressed:(UIButton *)sender;
+
+
 
 @end
 
-NS_ASSUME_NONNULL_END
