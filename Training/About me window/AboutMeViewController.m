@@ -89,24 +89,7 @@
 }
 
 -(IBAction)buttonPressed:(id)sender{
-    _count+=1;
-    if(sender == menuBtn){
-        if(_count%2==1){
-            [transV setHidden:NO];
-            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
-                CGRect frame = self->sidePanel.frame;
-                frame.origin.x = 0;
-                self->sidePanel.frame = frame;
-            } completion:nil];
-        } else if(_count%2==0){
-            [transV setHidden:YES];
-            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
-                CGRect frame = self->sidePanel.frame;
-                frame.origin.x = -self->sidePanel.frame.size.width;
-                self->sidePanel.frame = frame;
-            } completion:nil];
-        }
-    }
+    
 }
 
 - (IBAction)mainBtnPress:(UIButton *)sender {
@@ -143,6 +126,27 @@
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"AboutMe" bundle:nil];
     AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"ChangeViewController"];
     [self presentViewController:myVC animated:YES completion:nil];
+}
+
+- (IBAction)menuBtnPressed:(UIButton *)sender {
+    _count+=1;
+    if(sender == menuBtn){
+        if(_count%2==1){
+            [transV setHidden:NO];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = 0;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        } else if(_count%2==0){
+            [transV setHidden:YES];
+            [UIView transitionWithView:sidePanel duration:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self->sidePanel.frame;
+                frame.origin.x = -self->sidePanel.frame.size.width;
+                self->sidePanel.frame = frame;
+            } completion:nil];
+        }
+    }
 }
 
 
