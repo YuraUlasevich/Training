@@ -1,28 +1,28 @@
 //
-//  TrainersTableTableViewController.m
+//  MTVC.m
 //  Training
 //
-//  Created by Юра Уласевич on 4/24/19.
+//  Created by Юра Уласевич on 5/7/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
-#import "TrainersTableTableViewController.h"
-#import "UIScrollView+FloatingButton.h"
-#import "MainWindowViewController.h"
-#import <FMDB.h>
+#import "MTVC.h"
 
-@interface TrainersTableTableViewController () <MEVFloatingButtonDelegate>{
-    NSMutableArray *_loginItems;
-}
+@interface MTVC ()
 
 @end
 
-@implementation TrainersTableTableViewController
+@implementation MTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _loginItems = [[NSMutableArray alloc] init];
+    _labelItems = [[NSMutableArray alloc] init];
     [self loadItems];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRight];
@@ -31,12 +31,44 @@
 -(void)didSwipe:(UISwipeGestureRecognizer*) swipe{
     if(swipe.direction == UISwipeGestureRecognizerDirectionRight){
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-        TrainersTableTableViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+        MTVC* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
         [self presentViewController:myVC animated:YES completion:nil];
     }
 }
 
+-(void) loadItems{
+    NSUserDefaults* _userDefault = [NSUserDefaults standardUserDefaults];
+    NSString* result = [_userDefault objectForKey:@"login"];
+    if ([result length]) {
+        _userLogin = [_userDefault objectForKey:@"login"];
+    } else {
+        NSLog(@"Problems");
+    }
+    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
+    //создаем подключение к базе
+    _database = [FMDatabase databaseWithPath:databasePath];
+    _database.traceExecution = false; //выводит подробный лог запросов в консоль
+    [_database open];
+    NSString* testStr=[NSString stringWithFormat:@"select label from client_choise where client_login = '%@'", _userLogin];
+    
+    //выполняем выборку из таблицы client
+    _results = [_database executeQuery:testStr];
+    while([_results next]) {
+        NSString *trainerLogin = [_results stringForColumn:@"label"];
+        //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
+        [_labelItems insertObject:trainerLogin atIndex:[_labelItems count]];
+    }
+    [_database close];
+}
 #pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _labelItems.count;
+}
 
 - (void)textViewDidChange:(UITextView *)textView {
     CGPoint currentOffset = self.tableView.contentOffset;
@@ -47,51 +79,20 @@
     [self.tableView setContentOffset:currentOffset animated:NO];
 }
 
--(void) loadItems{
-    //определяем путь к файлу с базой
-    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
-    //создаем подключение к базе
-    FMDatabase *database;
-    database = [FMDatabase databaseWithPath:databasePath];
-    database.traceExecution = false; //выводит подробный лог запросов в консоль
-    [database open];
-    
-    //выполняем выборку из таблицы client
-    FMResultSet *results = [database executeQuery:@"select * from trainer"];
-    while([results next]) {
-        NSString *trainerLogin = [results stringForColumn:@"login"];
-        //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
-        [_loginItems insertObject:trainerLogin atIndex:[_loginItems count]];
-    }
-    
-    //удаляем подключение к базе
-    [database close];
-    
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _loginItems.count;
-}
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text  = _loginItems[indexPath.row];
+    cell.textLabel.text  = _labelItems[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
-    TrainersViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
+    MyTrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-    myVC.login = cell.textLabel.text;
+    myVC.label = cell.textLabel.text;
     [self presentViewController:myVC animated:YES completion:nil];
 }
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

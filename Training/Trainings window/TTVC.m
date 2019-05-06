@@ -1,27 +1,30 @@
 //
-//  TrainersTableTableViewController.m
+//  TTVC.m
 //  Training
 //
-//  Created by Юра Уласевич on 4/24/19.
+//  Created by Юра Уласевич on 5/6/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
-#import "TrainersTableTableViewController.h"
-#import "UIScrollView+FloatingButton.h"
-#import "MainWindowViewController.h"
-#import <FMDB.h>
+#import "TTVC.h"
 
-@interface TrainersTableTableViewController () <MEVFloatingButtonDelegate>{
-    NSMutableArray *_loginItems;
-}
+@interface TTVC ()
 
 @end
 
-@implementation TrainersTableTableViewController
+@implementation TTVC{
+    NSMutableArray *_labelItems;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _loginItems = [[NSMutableArray alloc] init];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _labelItems = [[NSMutableArray alloc] init];
     [self loadItems];
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
@@ -31,21 +34,13 @@
 -(void)didSwipe:(UISwipeGestureRecognizer*) swipe{
     if(swipe.direction == UISwipeGestureRecognizerDirectionRight){
         UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-        TrainersTableTableViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
+        TTVC* myVC = [sb instantiateViewControllerWithIdentifier:@"MainWindowViewController"];
         [self presentViewController:myVC animated:YES completion:nil];
     }
 }
 
-#pragma mark - Table view data source
 
-- (void)textViewDidChange:(UITextView *)textView {
-    CGPoint currentOffset = self.tableView.contentOffset;
-    [UIView setAnimationsEnabled:NO];
-    [self.tableView beginUpdates];
-    [self.tableView endUpdates];
-    [UIView setAnimationsEnabled:YES];
-    [self.tableView setContentOffset:currentOffset animated:NO];
-}
+#pragma mark - Table view data source
 
 -(void) loadItems{
     //определяем путь к файлу с базой
@@ -57,13 +52,12 @@
     [database open];
     
     //выполняем выборку из таблицы client
-    FMResultSet *results = [database executeQuery:@"select * from trainer"];
+    FMResultSet *results = [database executeQuery:@"select * from training"];
     while([results next]) {
-        NSString *trainerLogin = [results stringForColumn:@"login"];
+        NSString *trainerLogin = [results stringForColumn:@"label"];
         //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
-        [_loginItems insertObject:trainerLogin atIndex:[_loginItems count]];
+        [_labelItems insertObject:trainerLogin atIndex:[_labelItems count]];
     }
-    
     //удаляем подключение к базе
     [database close];
     
@@ -74,21 +68,30 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _loginItems.count;
+    return _labelItems.count;
 }
 
+- (void)textViewDidChange:(UITextView *)textView {
+    CGPoint currentOffset = self.tableView.contentOffset;
+    [UIView setAnimationsEnabled:NO];
+    [self.tableView beginUpdates];
+    [self.tableView endUpdates];
+    [UIView setAnimationsEnabled:YES];
+    [self.tableView setContentOffset:currentOffset animated:NO];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text  = _loginItems[indexPath.row];
+    cell.textLabel.text  = _labelItems[indexPath.row];
     return cell;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainers" bundle:nil];
-    TrainersViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainersViewController"];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
+    TrainingViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingViewController"];
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-    myVC.login = cell.textLabel.text;
+    myVC.label = cell.textLabel.text;
     [self presentViewController:myVC animated:YES completion:nil];
 }
 

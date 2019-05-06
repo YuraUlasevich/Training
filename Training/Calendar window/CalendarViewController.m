@@ -150,13 +150,13 @@
 
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
-    CalendarViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
+    CalendarViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 
 - (IBAction)trainingsBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
-    CalendarViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
+    CalendarViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 

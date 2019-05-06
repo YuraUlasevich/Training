@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <FMDB.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "TrainersViewController.h"
 
 @interface TrainersTableTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
-
-NS_ASSUME_NONNULL_END

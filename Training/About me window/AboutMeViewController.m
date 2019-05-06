@@ -106,7 +106,7 @@
 
 - (IBAction)myTrainingsBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
-    AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
+    AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 
@@ -118,7 +118,7 @@
 
 - (IBAction)trainingsBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
-    AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
+    AboutMeViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 

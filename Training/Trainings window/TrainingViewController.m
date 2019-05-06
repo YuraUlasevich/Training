@@ -1,18 +1,18 @@
 //
-//  MyTrainingsViewController.m
+//  TrainingViewController.m
 //  Training
 //
-//  Created by Юра Уласевич on 4/21/19.
+//  Created by Юра Уласевич on 5/6/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
-#import "MyTrainingsViewController.h"
+#import "TrainingViewController.h"
 
-@interface MyTrainingsViewController ()
+@interface TrainingViewController ()
 
 @end
 
-@implementation MyTrainingsViewController
+@implementation TrainingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +23,7 @@
     specializationLable.text = _spec;
     durationLabel.text = _duration;
     descriptionLabel.text = _description;
+
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRight];
@@ -30,12 +31,11 @@
 
 -(void)didSwipe:(UISwipeGestureRecognizer*) swipe{
     if(swipe.direction == UISwipeGestureRecognizerDirectionRight){
-        UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
-        MyTrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MTVC"];
+        UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
+        TrainingViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TTVC"];
         [self presentViewController:myVC animated:YES completion:nil];
     }
 }
-
 
 -(void)loadItems{
     NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
@@ -66,7 +66,7 @@
 }
 */
 
-- (IBAction)usBtnPressed:(UIButton *)sender {
+- (IBAction)subscribeBtnClick:(UIButton *)sender {
     NSUserDefaults* _userDefault = [NSUserDefaults standardUserDefaults];
     NSString* result = [_userDefault objectForKey:@"login"];
     if ([result length]) {
@@ -79,7 +79,7 @@
     _database = [FMDatabase databaseWithPath:databasePath];
     _database.traceExecution = false; //выводит подробный лог запросов в консоль
     [_database open];
-    NSString* testStr=[NSString stringWithFormat:@"delete from client_choise where  label = '%@' and client_login =  '%@'", _label, _userLogin];
+    NSString* testStr=[NSString stringWithFormat:@"insert into client_choise (trainer_login, client_login, label) values ('%@', '%@', '%@')", _trainer, _userLogin ,_label];
     
     //выполняем выборку из таблицы client
     if (![_database executeUpdate:testStr]) {
@@ -87,8 +87,8 @@
         [_database close];
     }
     else{
-        UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
-        MyTrainingsViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MTVC"];
+        UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
+        TrainingViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TTVC"];
         [self presentViewController:myVC animated:YES completion:nil];
     }
     [_database close];

@@ -79,7 +79,7 @@
 }
 - (void)myTrainingsBtnPressed:(UIButton *)sender{
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MyTrainings" bundle:nil];
-    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MyTrainingsViewController"];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"MTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 - (void)calendarBtnPressed:(UIButton *)sender{
@@ -90,7 +90,7 @@
 
 - (IBAction)trainingsBtnPressed:(UIButton *)sender {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Trainings" bundle:nil];
-    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TrainingsViewController"];
+    MainWindowViewController* myVC = [sb instantiateViewControllerWithIdentifier:@"TTVC"];
     [self presentViewController:myVC animated:YES completion:nil];
 }
 @end

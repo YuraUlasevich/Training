@@ -1,15 +1,16 @@
 //
-//  MyTrainingsViewController.h
+//  TrainingViewController.h
 //  Training
 //
-//  Created by Юра Уласевич on 4/21/19.
+//  Created by Юра Уласевич on 5/6/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <FMDB.h>
 
-@interface MyTrainingsViewController : UIViewController{
+
+@interface TrainingViewController : UIViewController{
     IBOutlet UILabel *trainingLabel;
     IBOutlet UILabel *trainerLoginLable;
     IBOutlet UILabel *specializationLable;
@@ -24,8 +25,10 @@
     NSString* _description;
     NSString* _userLogin;
 }
-- (IBAction)usBtnPressed:(UIButton *)sender;
+
 @property(nonatomic, assign) NSString* label;
+- (IBAction)subscribeBtnClick:(UIButton *)sender;
+
 @end
 
 
