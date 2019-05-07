@@ -12,18 +12,22 @@
 #import <FMDB.h>
 
 @interface CalendarViewController () <RSDFDatePickerViewDelegate>
-
+@property (copy, nonatomic) NSDateFormatter *dateFormatter;
 @end
 
 @implementation CalendarViewController
-@synthesize transV, menuBtn, sidePanel;
+@synthesize transV, menuBtn, sidePanel, contentView, mainView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _count = 0;
     UITapGestureRecognizer *tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideSidePanel:)];
     tapper.numberOfTapsRequired = 1;
+    _dateItems = [[NSMutableArray alloc] init];
     [transV addGestureRecognizer:tapper];
+    
+    [self loadItems];
+    
     
     RSDFDatePickerView *datePickerView = [[RSDFDatePickerView alloc] initWithFrame:self.view.bounds];
     datePickerView.delegate = self;
@@ -31,6 +35,35 @@
     [self.contentView addSubview:datePickerView];
 }
 
+-(void)loadItems{
+    NSUserDefaults* _userDefault = [NSUserDefaults standardUserDefaults];
+    NSString* result = [_userDefault objectForKey:@"login"];
+    if ([result length]) {
+        _userLogin = [_userDefault objectForKey:@"login"];
+    } else {
+        NSLog(@"Problems");
+    }
+    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
+    //создаем подключение к базе
+    _database = [FMDatabase databaseWithPath:databasePath];
+    _database.traceExecution = false; //выводит подробный лог запросов в консоль
+    [_database open];
+    NSString* testStr=[NSString stringWithFormat:@"select train_date from train where client_login = '%@'", _userLogin];
+    
+    //выполняем выборку из таблицы client
+    _results = [_database executeQuery:testStr];
+    while([_results next]) {
+        NSString* trainDate = [_results stringForColumn:@"train_date"];
+        NSLog(@"%@", trainDate);
+        //atIndex - текущее кол-во элементов, чтобы новый элемент добавлялся в конец списка
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSDate *dateFromString = [dateFormatter dateFromString:trainDate];
+        [_dateItems insertObject:dateFromString atIndex:[_dateItems count]];
+    }
+    [_database close];
+    NSLog(@"%@", _dateItems[0]);
+}
 // Returns YES if the date should be highlighted or NO if it should not.
 - (BOOL)datePickerView:(RSDFDatePickerView *)view shouldHighlightDate:(NSDate *)date
 {
@@ -46,7 +79,16 @@
 // Prints out the selected date.
 - (void)datePickerView:(RSDFDatePickerView *)view didSelectDate:(NSDate *)date
 {
-    NSLog(@"%@", [date description]);
+    if(![_dateItems containsObject:date]){
+        [[[UIAlertView alloc] initWithTitle:@"No training" message:[self.dateFormatter stringFromDate:date] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
+    else{
+        UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Calendar" bundle:nil];
+        Train* myVC = [sb instantiateViewControllerWithIdentifier:@"Train"];
+        
+        myVC.trainingDate = date;
+        [self presentViewController:myVC animated:YES completion:nil];
+    }
 }
 
 
@@ -56,22 +98,13 @@
     // The date is an `NSDate` object without time components.
     // So, we need to use dates without time components.
     
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
-    NSDateComponents *todayComponents = [calendar components:unitFlags fromDate:[NSDate date]];
-    NSDate *today = [calendar dateFromComponents:todayComponents];
-    
-    return [date isEqual:today];
+    return [_dateItems containsObject:date];
 }
 
 // Returns the color of the default mark image for the specified date.
 - (UIColor *)datePickerView:(RSDFDatePickerView *)view markImageColorForDate:(NSDate *)date
 {
-    if (arc4random() % 2 == 0) {
-        return [UIColor grayColor];
-    } else {
-        return [UIColor greenColor];
-    }
+    return [UIColor colorWithRed:126/255.0f green:104/255.0f blue:250/255.0f alpha:1.0f];
 }
 
 // Returns the mark image for the specified date.

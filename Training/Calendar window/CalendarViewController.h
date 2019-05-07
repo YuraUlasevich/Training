@@ -8,15 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "RSDFDatePickerView.h"
+#import <FMDB.h>
+#import "Train.h"
 
-
-@interface CalendarViewController : UIViewController{
+@interface CalendarViewController : UIViewController <RSDFDatePickerViewDelegate>{
     IBOutlet UIView *transV;
     IBOutlet UIView *sidePanel;
     IBOutlet UIButton *menuBtn;
     IBOutlet UIView *mainView;
     IBOutlet UIView *contentView;
     
+    NSMutableArray* _dateItems;
+    FMResultSet* _results;
+    FMDatabase* _database;
+    NSString* _userLogin;
 }
 - (IBAction)mainBtnPressed:(UIButton *)sender;
 - (IBAction)aboutMeBtnPressed:(UIButton *)sender;
@@ -30,6 +35,7 @@
 @property(nonatomic) UIButton *menuBtn;
 @property(nonatomic) UIView *mainView;
 @property(nonatomic) UIView *contentView;
+
 @property int count;
 @end
 
