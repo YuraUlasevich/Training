@@ -28,7 +28,6 @@
 		348C8DF22282157700D74A44 /* Train.m in Sources */ = {isa = PBXBuildFile; fileRef = 348C8DF12282157700D74A44 /* Train.m */; };
 		348C8DF422822E9C00D74A44 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348C8DF322822E9C00D74A44 /* UserNotifications.framework */; };
 		3496328522665A1F0055C2B8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */; };
-		349632922267747A0055C2B8 /* my.db in Resources */ = {isa = PBXBuildFile; fileRef = 34963291226774790055C2B8 /* my.db */; };
 		34C393C12270C10E009BB0DC /* TrainersTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */; };
 		34C393C62270CFC5009BB0DC /* UIScrollView+FloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */; };
 		34C393CB2270D3D9009BB0DC /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C393CA2270D3D9009BB0DC /* image0.png */; };
@@ -72,9 +71,7 @@
 		348C8DF02282157700D74A44 /* Train.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Train.h; sourceTree = "<group>"; };
 		348C8DF12282157700D74A44 /* Train.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Train.m; sourceTree = "<group>"; };
 		348C8DF322822E9C00D74A44 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		34923427226857BB00D20897 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		3496328422665A1F0055C2B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		34963291226774790055C2B8 /* my.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = my.db; sourceTree = SOURCE_ROOT; };
 		34C393BF2270C10E009BB0DC /* TrainersTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainersTableTableViewController.h; sourceTree = "<group>"; };
 		34C393C02270C10E009BB0DC /* TrainersTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainersTableTableViewController.m; sourceTree = "<group>"; };
 		34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FloatingButton.m"; sourceTree = "<group>"; };
@@ -232,8 +229,6 @@
 				344081FF227E2C79005BE525 /* Start app */,
 				34CA6F3E2255CBDA0078C67A /* AppDelegate.h */,
 				34CA6F3F2255CBDA0078C67A /* AppDelegate.m */,
-				34923427226857BB00D20897 /* my.db */,
-				34963291226774790055C2B8 /* my.db */,
 				34C393C52270CFC4009BB0DC /* UIScrollView+FloatingButton.m */,
 				34C393C72270CFE1009BB0DC /* UIScrollView+FloatingButton.h */,
 				34C393CA2270D3D9009BB0DC /* image0.png */,
@@ -320,7 +315,6 @@
 				347EDC84226CEB12001533ED /* Trainers.storyboard in Resources */,
 				34C393CB2270D3D9009BB0DC /* image0.png in Resources */,
 				34CA6F4B2255CBDC0078C67A /* LaunchScreen.storyboard in Resources */,
-				349632922267747A0055C2B8 /* my.db in Resources */,
 				34CA6F482255CBDC0078C67A /* Assets.xcassets in Resources */,
 				34CA6F462255CBDA0078C67A /* Main.storyboard in Resources */,
 			);

@@ -43,7 +43,7 @@
     } else {
         NSLog(@"Problems");
     }
-    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
+    NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";
     //создаем подключение к базе
     _database = [FMDatabase databaseWithPath:databasePath];
     _database.traceExecution = false; //выводит подробный лог запросов в консоль
@@ -60,9 +60,12 @@
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         NSDate *dateFromString = [dateFormatter dateFromString:trainDate];
         [_dateItems insertObject:dateFromString atIndex:[_dateItems count]];
+        NSLog(@"%@", dateFromString);
+        
     }
     [_database close];
     NSLog(@"%@", _dateItems[0]);
+    NSLog(@"%lu", (unsigned long)[_dateItems count]);
 }
 // Returns YES if the date should be highlighted or NO if it should not.
 - (BOOL)datePickerView:(RSDFDatePickerView *)view shouldHighlightDate:(NSDate *)date

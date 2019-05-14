@@ -70,13 +70,13 @@
                                                                  options:0
                                                                    range:NSMakeRange(0, [_secondNameRegisterTextField.text length])];
     regex = [NSRegularExpression regularExpressionWithPattern:patternForHeight options:regexOptions error:&errorHeight];
-    NSUInteger numberOfMatchesHeight = [regex numberOfMatchesInString:_heightRegisterTextField.text
-                                                                 options:0
-                                                                   range:NSMakeRange(0, [_heightRegisterTextField.text length])];
+    NSUInteger numberOfMatchesHeight = 0;
+    if([_heightRegisterTextField.text integerValue] < 300 && [_heightRegisterTextField.text integerValue] > 0)
+        numberOfMatchesHeight = 1;
     regex = [NSRegularExpression regularExpressionWithPattern:patternForWeight options:regexOptions error:&errorWeight];
-    NSUInteger numberOfMatchesWeight = [regex numberOfMatchesInString:_weightRegisterTextField.text
-                                                                 options:0
-                                                                   range:NSMakeRange(0, [_weightRegisterTextField.text length])];
+    NSUInteger numberOfMatchesWeight = 0;
+    if([_weightRegisterTextField.text integerValue] < 200 && [_weightRegisterTextField.text integerValue] > 0)
+        numberOfMatchesWeight = 1;
     regex = [NSRegularExpression regularExpressionWithPattern:patternForLogin options:regexOptions error:&errorLogin];
     NSUInteger numberOfMatchesLogin = [regex numberOfMatchesInString:_loginRegisterTextField.text
                                                                  options:0
@@ -94,11 +94,11 @@
         _secondNameRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
         _secondNameRegisterTextField.layer.borderWidth = 3.0f;
     }
-    if(numberOfMatchesHeight == 0){
+    if(numberOfMatchesHeight != 1){
         _heightRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
         _heightRegisterTextField.layer.borderWidth = 3.0f;
     }
-    if(numberOfMatchesWeight == 0){
+    if(numberOfMatchesWeight != 1){
         _weightRegisterTextField.layer.borderColor = [UIColor redColor].CGColor;
         _weightRegisterTextField.layer.borderWidth = 3.0f;
     }
@@ -112,7 +112,7 @@
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
             //определяем путь к файлу с базой
-            NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";        //создаем подключение к базе
+            NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";       //создаем подключение к базе
             FMDatabase *database;
             database = [FMDatabase databaseWithPath:databasePath];
             database.traceExecution = false; //выводит подробный лог запросов в консоль
@@ -133,7 +133,7 @@
 - (void)loadItems
 {
     //определяем путь к файлу с базой
-    NSString* databasePath = @"/Users/uraulasevic/Development/kurs/my.db";
+    NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";
     //создаем подключение к базе
     FMDatabase *database;
     database = [FMDatabase databaseWithPath:databasePath];
