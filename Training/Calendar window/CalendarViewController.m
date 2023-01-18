@@ -43,7 +43,7 @@
     } else {
         NSLog(@"Problems");
     }
-    NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";
+    NSString* databasePath = @"/Users/uraulasevic/my.db";
     //создаем подключение к базе
     _database = [FMDatabase databaseWithPath:databasePath];
     _database.traceExecution = false; //выводит подробный лог запросов в консоль

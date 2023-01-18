@@ -38,7 +38,7 @@
     }
     
     //определяем путь к файлу с базой
-    NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";
+    NSString* databasePath = @"/Users/uraulasevic/my.db";
     //создаем подключение к базе
     FMDatabase *database;
     database = [FMDatabase databaseWithPath:databasePath];

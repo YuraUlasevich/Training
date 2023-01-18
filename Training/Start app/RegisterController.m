@@ -112,7 +112,7 @@
     }
     if(numberOfMatchesFirstName !=0 && numberOfMatchesSecondName !=0 && numberOfMatchesWeight !=0 && numberOfMatchesHeight !=0 && numberOfMatchesPassword != 0 && numberOfMatchesLogin !=0){
             //определяем путь к файлу с базой
-            NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";       //создаем подключение к базе
+            NSString* databasePath = @"/Users/uraulasevic/my.db";       //создаем подключение к базе
             FMDatabase *database;
             database = [FMDatabase databaseWithPath:databasePath];
             database.traceExecution = false; //выводит подробный лог запросов в консоль
@@ -133,7 +133,7 @@
 - (void)loadItems
 {
     //определяем путь к файлу с базой
-    NSString* databasePath = @"/Users/uraulasevic/Dropbox/my.db";
+    NSString* databasePath = @"/Users/uraulasevic/my.db";
     //создаем подключение к базе
     FMDatabase *database;
     database = [FMDatabase databaseWithPath:databasePath];
